@@ -14,13 +14,12 @@ import {
 import { TabActions } from '@react-navigation/native';
 import workbench from '../assets/Workbench.png';
 
-const list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(
-  (x) => ({
-    name: `Workbench${x}`,
-    avatar_url: workbench,
-    type: 'Furniture',
-  }),
-);
+const list = [{
+  name: 'Workbench',
+  avatar_url: workbench,
+  type: 'Furniture',
+},
+];
 const SecondPage = ({ navigation }) => {
   const [search, setSearch] = useState('');
   return (
@@ -41,7 +40,7 @@ const SecondPage = ({ navigation }) => {
     list
       .filter((e) => e.name.toLowerCase().includes(search.toLocaleLowerCase()))
       .map((l, i) => (
-        <ListItem key={i} bottomDivider onPress={(event) => navigation.dispatch(TabActions.jumpTo('PageOne', { name: l.name }))}>
+        <ListItem key={i} bottomDivider onPress={(event) => navigation.dispatch(TabActions.jumpTo('ObjectPage', { name: l.name }))}>
           <Avatar source={l.avatar_url} />
           <ListItem.Content>
             <ListItem.Title>{l.name}</ListItem.Title>

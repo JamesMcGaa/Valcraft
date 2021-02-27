@@ -13,30 +13,13 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import {
   Header, Icon, Text, Image,
 } from 'react-native-elements';
-import PageOne from './pages/FirstPage.js';
-import PageTwo from './pages/SecondPage.js';
+import ObjectPage from './pages/ObjectPage.js';
+import SearchPage from './pages/SearchPage.js';
 import potion_logo from './assets/potion_logo.png';
 
 // https://coolors.co/264653-2a9d8f-e9c46a-f4a261-e76f51
-function Feed({ navigation }) {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Feed Screen</Text>
-      <Button title="Open drawer" onPress={() => navigation.openDrawer()} />
-      <Button title="Toggle drawer" onPress={() => navigation.toggleDrawer()} />
-    </View>
-  );
-}
 
-function Notifications() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Notifications Screen</Text>
-    </View>
-  );
-}
-
-const HIDDEN_DRAWER_ITEMS = ['PageOne'];
+const HIDDEN_DRAWER_ITEMS = ['ObjectPage'];
 
 function CustomDrawerContent(props) { // https://stackoverflow.com/questions/62204060/how-to-hide-drawer-item-in-react-navigation-5x
   const { state, ...rest } = props;
@@ -94,11 +77,9 @@ function MyDrawer() {
         ),
       })}
     >
-      <Drawer.Screen name="PageTwo" component={PageTwo} />
-      <Drawer.Screen name="Feed" component={Feed} />
-      <Drawer.Screen name="Notifications" component={Notifications} />
+      <Drawer.Screen name="Search" component={SearchPage} />
       {/* Hidden  */}
-      <Drawer.Screen name="PageOne" component={PageOne} />
+      <Drawer.Screen name="ObjectPage" component={ObjectPage} />
     </Drawer.Navigator>
   );
 }
@@ -110,6 +91,5 @@ export default function App() {
         <MyDrawer />
       </NavigationContainer>
     </SafeAreaProvider>
-
   );
 }

@@ -8,7 +8,10 @@ import {
 import { ScrollView } from 'react-native-gesture-handler';
 import { FlatGrid } from 'react-native-super-grid';
 import AntIcon from 'react-native-vector-icons/AntDesign';
-import { SearchBar } from 'react-native-elements';
+import {
+  Avatar, Badge, Card, ListItem, SearchBar,
+} from 'react-native-elements';
+import { TabActions } from '@react-navigation/native';
 import {
   OBJECT_NAMES, ALL_OBJECTS_DATA,
 } from '../data';
@@ -17,107 +20,102 @@ import workbench from '../assets/Workbench.png';
 const INCREMENT_DECREMENT_DESIRE_BUTTON_SIZE = 40;
 
 const styles = StyleSheet.create({
-  item_icon: {
-    marginRight: 20,
-  },
-  row: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 30,
-  },
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    marginVertical: 30,
-  },
-  title: {
-    marginRight: 20,
-    fontSize: 25,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
-  },
-  itemContainer: {
-    justifyContent: 'flex-end',
-    borderRadius: 5,
-    padding: 10,
-    height: 150,
-  },
 
-  itemName: {
-    flex: 1,
-    flexWrap: 'wrap-reverse',
-    fontSize: 16,
-    color: '#fff',
-    fontWeight: '600',
-  },
-  itemCode: {
-    fontWeight: '600',
-    fontSize: 12,
-    color: '#fff',
-  },
 });
+
+const SUBSECTION_KEYS = Object.freeze({
+  FUNDAMENTAL: 'FUNDAMENTAL',
+});
+
+function handle(key, data, subsections, navigation) {
+  switch (key) {
+    case 'requirements':
+      renderRequirements(data, subsections, navigation);
+      break;
+    default:
+      break;
+  }
+}
+
+function renderFundamentalSubsection(data) {
+  return (
+    <Card key={SUBSECTION_KEYS.FUNDAMENTAL}>
+      <Card.Title h4>{data.name}</Card.Title>
+      <Card.Divider />
+      <View>
+        <Image
+          source={data.image}
+          style={{
+            width: 64, height: 64, alignSelf: 'center',
+          }}
+        />
+        <Badge
+          status="primary"
+          containerStyle={{ alignSelf: 'center', top: -16, right: -4 }}
+          value={730}
+        />
+      </View>
+      <Text style={{ fontWeight: 'bold' }}>
+        {'Type: '}
+        {data.type}
+      </Text>
+      <Text style={{ marginBottom: 10 }}>
+        {data.description}
+      </Text>
+    </Card>
+  );
+}
+
+function renderRequirements(data, subsections, navigation) {
+  subsections.push(
+    <Card>
+      <Card.Title>Requirements</Card.Title>
+      {data.requirements.map((req) => {
+        const reqData = ALL_OBJECTS_DATA[req.name];
+        return (
+          <ListItem
+            key={reqData.name}
+            bottomDivider
+            onPress={() => navigation.dispatch(TabActions.jumpTo('ObjectPage', { name: reqData.name }))}
+          >
+            <View>
+              <Avatar source={reqData.image} />
+              <Badge
+                status="error"
+                containerStyle={{ position: 'absolute', top: 16, right: -4 }}
+                value={req.quantity}
+              />
+            </View>
+            <ListItem.Content>
+              <ListItem.Title>{reqData.name}</ListItem.Title>
+              <ListItem.Subtitle>{reqData.type}</ListItem.Subtitle>
+            </ListItem.Content>
+          </ListItem>
+        );
+      })}
+    </Card>,
+  );
+}
+
+function generateSubsections(data, navigation) {
+  const subsections = [];
+  subsections.push(
+    renderFundamentalSubsection(data),
+  );
+
+  for (const [key, value] of Object.entries(data)) {
+    handle(key, data, subsections, navigation);
+  }
+  return subsections;
+}
 
 function TabOneScreen(props) {
   const data = ALL_OBJECTS_DATA[props.route.params.name];
-  const items = [
-    { name: 'TURQUOISE', code: 2 },
-    { name: 'EMERALD', code: 3 },
-    { name: 'PETER RIVER', code: 4 },
-    { name: 'AMETHYST', code: 5 },
-  ];
-
-  const [numDesired, setNumDesired] = React.useState(730);
+  const subsections = generateSubsections(data, props.navigation);
   return (
-    <View style={styles.container}>
-      <View style={styles.row}>
-        <View style={styles.item_icon}>
-          <Image source={data.image} />
-        </View>
-        <Text style={styles.title}>
-          Workbench (
-          {numDesired}
-          )
-        </Text>
-        <TouchableOpacity
-          onPress={() => {
-            setNumDesired(numDesired - 1);
-          }}
-          style={{ marginRight: 3 }}
-        >
-          <AntIcon
-            name="minuscircleo"
-            size={INCREMENT_DECREMENT_DESIRE_BUTTON_SIZE}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => {
-            setNumDesired(numDesired + 1);
-          }}
-        >
-          <AntIcon
-            name="pluscircleo"
-            size={INCREMENT_DECREMENT_DESIRE_BUTTON_SIZE}
-          />
-        </TouchableOpacity>
-      </View>
-      <FlatGrid
-        itemDimension={100}
-        data={items}
-        spacing={10}
-        renderItem={({ item }) => (
-          <View style={[styles.itemContainer, { backgroundColor: '#3498db' }]}>
-            <Image source={workbench} />
-            <Text style={styles.itemName}>{item.name}</Text>
-            <Text style={styles.itemCode}>{item.code}</Text>
-          </View>
-        )}
-      />
-
-    </View>
+    <ScrollView>
+      {subsections}
+    </ScrollView>
   );
 }
 

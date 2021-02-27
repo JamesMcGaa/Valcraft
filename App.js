@@ -1,21 +1,20 @@
-import * as React from 'react';
-import {
-  View, Button,
-} from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
 import {
   createDrawerNavigator,
   DrawerContentScrollView,
   DrawerItemList,
-  DrawerItem,
 } from '@react-navigation/drawer';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { NavigationContainer } from '@react-navigation/native';
+import * as React from 'react';
 import {
-  Header, Icon, Text, Image,
+  View,
+} from 'react-native';
+import {
+  Header, Icon, Image, Text,
 } from 'react-native-elements';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import potionLogo from './assets/potion_logo.png';
 import ObjectPage from './pages/ObjectPage.js';
 import SearchPage from './pages/SearchPage.js';
-import potion_logo from './assets/potion_logo.png';
 
 // https://coolors.co/264653-2a9d8f-e9c46a-f4a261-e76f51
 
@@ -35,11 +34,10 @@ function CustomDrawerContent(props) { // https://stackoverflow.com/questions/622
     <DrawerContentScrollView {...props}>
       <View style={{ alignItems: 'center' }}>
         <Image
-          source={potion_logo}
+          source={potionLogo}
           style={{ width: 120, height: 120 }}
         />
       </View>
-
       <DrawerItemList state={newState} {...rest} />
     </DrawerContentScrollView>
   );

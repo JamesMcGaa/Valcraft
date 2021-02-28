@@ -24,15 +24,20 @@ const styles = StyleSheet.create({
 
 const SUBSECTION_KEYS = Object.freeze({
   FUNDAMENTAL: 'FUNDAMENTAL',
+  RECIPE: 'RECIPE',
 });
 
 function handle(key, data, subsections, navigation) {
-  switch (key) {
-    case 'requirements':
-      renderRequirements(data, subsections, navigation);
-      break;
-    default:
-      break;
+  console.log('handle', key, data[key]);
+  if (data[key] !== '') { // CSV to JSON exports these as nonnull
+    switch (key) {
+      case 'recipe':
+        console.log('recip');
+        renderRecipe(data, subsections, navigation);
+        break;
+      default:
+        break;
+    }
   }
 }
 
@@ -65,11 +70,11 @@ function renderFundamentalSubsection(data) {
   );
 }
 
-function renderRequirements(data, subsections, navigation) {
+function renderRecipe(data, subsections, navigation) {
   subsections.push(
-    <Card>
-      <Card.Title>Requirements</Card.Title>
-      {data.requirements.map((req) => {
+    <Card key={SUBSECTION_KEYS.RECIPE}>
+      <Card.Title>Recipe</Card.Title>
+      {data.recipe.map((req) => {
         const reqData = ALL_OBJECTS_DATA[req.name];
         return (
           <ListItem

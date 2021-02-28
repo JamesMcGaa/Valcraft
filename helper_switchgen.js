@@ -376,6 +376,30 @@ export default function image_importer(name) {
       return require('./assets/scraped/Black_metal_tower_shield.png');
     case 'Serpent Scale Shield':
       return require('./assets/scraped/Serpent_scale_shield.png');
+    case 'Bloodbag':
+      return require('./assets/scraped/Bloodbag.png');
+    case 'Barley Flour':
+      return require('./assets/scraped/Barley_flour.png');
+    case 'Raw Meat':
+      return require('./assets/scraped/Raw_meat.png');
+    case 'Turnip':
+      return require('./assets/scraped/Turnip.png');
+    case 'Flax':
+      return require('./assets/scraped/Flax.png');
+    case 'Wood':
+      return require('./assets/scraped/Wood.png');
+    case 'Drake Trophy':
+      return require('./assets/scraped/Drake_trophy.png');
+    case 'Wolf Trophy':
+      return require('./assets/scraped/Wolf_trophy.png');
+    case 'Fine Wood':
+      return require('./assets/scraped/Fine_wood.png');
+    case 'Core Wood':
+      return require('./assets/scraped/Core_wood.png');
+    case 'Deer Trophy':
+      return require('./assets/scraped/Deer_trophy.png');
+    case 'Draugr Elite Trophy':
+      return require('./assets/manual/Draugr_elite_trophy.png');
 
     default:
       return require('./assets/scraped/redsquare.png');

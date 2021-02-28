@@ -63,7 +63,7 @@ const RAW_OBJECTS_DATA = [
     description: 'A warm tasty soup made of mostly carrots.',
     ID: 'CarrotSoup',
     type: 'Food',
-    recipe: '1 Mushroom 3 Carrots',
+    recipe: '1 Mushroom 3 Carrot',
     prerequisites: '',
     subtype: '',
   },
@@ -228,7 +228,7 @@ const RAW_OBJECTS_DATA = [
     description: 'Nutritious and restorative.',
     ID: 'TurnipStew',
     type: 'Food',
-    recipe: '1 Raw meat 3 Turnips',
+    recipe: '1 Raw meat 3 Turnip',
     prerequisites: '',
     subtype: '',
   },
@@ -1977,7 +1977,7 @@ const RAW_OBJECTS_DATA = [
     description: 'Dark wood strung with glistening sinew, a vicious thing.',
     ID: 'BowDraugrFang',
     type: 'Weapon',
-    recipe: '10 Ancient bark 20 Silver 2 Deer hide 10 guck',
+    recipe: '10 Ancient bark 20 Silver 2 Deer hide 10 Guck',
     prerequisites: '',
     subtype: '',
   },
@@ -2080,13 +2080,194 @@ const RAW_OBJECTS_DATA = [
     prerequisites: '',
     subtype: '',
   },
+  {
+    name: 'Bloodbag',
+    notes: '',
+    location: 'Dropped by Leeches in the Swamp.',
+    description: 'The contents of a leech. Ick!',
+    ID: 'Bloodbag',
+    type: 'Misc',
+    recipe: '',
+    prerequisites: '',
+    subtype: '',
+  },
+  {
+    name: 'Barley Flour',
+    notes: '',
+    location: 'Crafted using Barley in the Windmill.',
+    description: 'Great for baking bread.',
+    ID: 'BarleyFlour',
+    type: 'Misc',
+    recipe: '',
+    prerequisites: '',
+    subtype: '',
+  },
+  {
+    name: 'Carrot',
+    notes: '',
+    location: 'Carrots are grown by planting Carrot seeds with the Cultivator.',
+    description: 'An orange tasty treat.',
+    ID: 'Carrot',
+    type: 'Misc',
+    recipe: '',
+    prerequisites: '',
+    subtype: '',
+  },
+  {
+    name: 'Raw Meat',
+    notes: '',
+    location: 'Dropped by Boar, Deer, Wolf',
+    description: 'A raw piece of meat, cook it for a tasty treat.',
+    ID: 'RawMeat',
+    type: 'Misc',
+    recipe: '',
+    prerequisites: '',
+    subtype: '',
+  },
+  {
+    name: 'Turnip',
+    notes: '',
+    location: 'Carrots are grown by planting Turnip seeds (found in the Swamp) with the Cultivator.',
+    description: 'A turnip.',
+    ID: 'Turnip',
+    type: 'Misc',
+    recipe: '',
+    prerequisites: '',
+    subtype: '',
+  },
+  {
+    name: 'Flax',
+    notes: '',
+    location: 'Fuling villages.',
+    description: 'Unspun fibers from a flax plant.',
+    ID: 'Flax',
+    type: 'Misc',
+    recipe: '',
+    prerequisites: '',
+    subtype: '',
+  },
+  {
+    name: 'Wood',
+    notes: '',
+    location: 'Branches, all Trees and Stumps, Greydwarf drops',
+    description: 'Good strong wood to build with.',
+    ID: 'Wood',
+    type: 'Misc',
+    recipe: '',
+    prerequisites: '',
+    subtype: '',
+  },
+  {
+    name: 'Drake Trophy',
+    notes: '',
+    location: 'Found by killing Drakes in the Mountain biome.',
+    description: 'Still cold to the touch.',
+    ID: 'TrophyHatchling',
+    type: 'Misc',
+    recipe: '',
+    prerequisites: '',
+    subtype: '',
+  },
+  {
+    name: 'Wolf Trophy',
+    notes: '',
+    location: 'Dropped by Wolves in the Mountain biome',
+    description: 'Frozen in death, the hair matted with blood and a silent howl lodged in its throat.',
+    ID: '',
+    type: 'Misc',
+    recipe: '',
+    prerequisites: '',
+    subtype: '',
+  },
+  {
+    name: 'Fine Wood',
+    notes: '',
+    location: 'Birch Tree, Oak Tree',
+    description: 'High quality wood for fine carpentry.',
+    ID: 'FineWood',
+    type: 'Misc',
+    recipe: '',
+    prerequisites: '',
+    subtype: '',
+  },
+  {
+    name: 'Core Wood',
+    notes: '',
+    location: 'Pine Tree',
+    description: 'Perfect for building log cabins.',
+    ID: 'RoundLog',
+    type: 'Misc',
+    recipe: '',
+    prerequisites: '',
+    subtype: '',
+  },
+  {
+    name: 'Deer Trophy',
+    notes: '',
+    location: 'Deer',
+    description: "A fine specimen but you'll need to kill more than deer to enter Valhalla.",
+    ID: 'TrophyDeer',
+    type: 'Misc',
+    recipe: '',
+    prerequisites: '',
+    subtype: '',
+  },
+  {
+    name: 'Draugr Elite Trophy',
+    notes: '',
+    location: 'Draugr Elites in the Swamp biome',
+    description: 'The dead stare of the glowing red eyes sends a shiver through your bones.',
+    ID: '',
+    type: 'Misc',
+    recipe: '',
+    prerequisites: '',
+    subtype: '',
+  },
 ];
+
+const mentioned = new Set();
+const loaded = new Set();
+
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
 const ALL_OBJECTS_DATA = {};
 RAW_OBJECTS_DATA.forEach((rawData) => {
+  loaded.add(rawData.name);
   ALL_OBJECTS_DATA[rawData.name] = rawData;
   ALL_OBJECTS_DATA[rawData.name].image = image_importer(rawData.name);
+  if (rawData.recipe !== '') {
+    const modifiedRecipe = [];
+    const tokens = rawData.recipe.split(' ').filter(Boolean);
+    let number = null;
+    let word = null;
+    tokens.forEach((token) => {
+      const trimmedToken = token.trim();
+      const parsed = parseInt(trimmedToken, 10);
+      if (!Number.isNaN(parsed)) {
+        if (word !== null) { // write out and zero
+          modifiedRecipe.push({ name: word, quantity: number });
+          word = null;
+        }
+        number = parsed;
+      } else if (word !== null) { // write out and zero
+        word += ' ';
+        word += capitalizeFirstLetter(token);
+      } else {
+        word = capitalizeFirstLetter(token);
+      }
+    });
+    modifiedRecipe.push({ name: word, quantity: number });
+    ALL_OBJECTS_DATA[rawData.name].recipe = modifiedRecipe;
+
+    modifiedRecipe.forEach((element) => {
+      mentioned.add(element.name);
+    });
+  }
 });
+const a_minus_b = new Set([...mentioned].filter((x) => !loaded.has(x)));
+console.log(a_minus_b);
 
 export {
   OBJECT_NAMES, ALL_OBJECTS_DATA,

@@ -2,7 +2,7 @@ import json
 from urllib.parse import quote
 import os.path
 from scrape_wiki_images import attempt_wiki_targeted_parse
-
+# https://csvjson.com/csv2json
 with open('data.json') as f:
   data = json.load(f)
 result = ''

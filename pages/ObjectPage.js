@@ -15,7 +15,6 @@ import { TabActions } from '@react-navigation/native';
 import {
   OBJECT_NAMES, ALL_OBJECTS_DATA,
 } from '../data';
-import workbench from '../assets/Workbench.png';
 
 const INCREMENT_DECREMENT_DESIRE_BUTTON_SIZE = 40;
 

@@ -8,10 +8,12 @@ import {
   Avatar, ListItem, SearchBar,
 } from 'react-native-elements';
 import { ScrollView } from 'react-native-gesture-handler';
+import { Asset } from 'expo-asset';
 import { ALL_OBJECTS_DATA } from '../data';
 
 const SecondPage = ({ navigation }) => {
   const [search, setSearch] = useState('');
+
   return (
     <View style={{ flex: 1 }}>
       <SearchBar

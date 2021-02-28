@@ -1,19 +1,43 @@
 // Custom Navigation Drawer / Sidebar with Image and Icon in Menu Options
 // https://aboutreact.com/custom-navigation-drawer-sidebar-with-image-and-icon-in-menu-options/
 
-import { TabActions } from '@react-navigation/native';
+import { StackActions } from '@react-navigation/native';
 import React, { useState } from 'react';
 import { View } from 'react-native';
 import {
-  Avatar, ListItem, SearchBar,
+  Avatar, Icon, ListItem, SearchBar,
 } from 'react-native-elements';
 import { ScrollView } from 'react-native-gesture-handler';
-import { Asset } from 'expo-asset';
 import { ALL_OBJECTS_DATA } from '../data';
 
-const SecondPage = ({ navigation }) => {
-  const [search, setSearch] = useState('');
+const SEARCH_RESULTS_COUNT_LIMIT = 25;
 
+function SeeMoreResult(navigation) {
+  return (
+    <ListItem
+      key="see more"
+      bottomDivider
+      disabled
+      disabledStyle={{ backgroundColor: 'rgb(225, 232, 238)' }}
+    >
+      <Icon
+        name="search"
+        type="evilicon"
+        size={40}
+        onPress={() => navigation.openDrawer()}
+      />
+      <ListItem.Content>
+        <ListItem.Title>Search to see more!</ListItem.Title>
+        <ListItem.Subtitle>...</ListItem.Subtitle>
+      </ListItem.Content>
+    </ListItem>
+  );
+}
+
+const SearchPage = ({ navigation }) => {
+  const [search, setSearch] = useState('');
+  const filtered = Object.keys(ALL_OBJECTS_DATA)
+    .filter((objectName) => objectName.toLowerCase().includes(search.toLocaleLowerCase()));
   return (
     <View style={{ flex: 1 }}>
       <SearchBar
@@ -27,13 +51,15 @@ const SecondPage = ({ navigation }) => {
         contentContainerStyle={{ flexGrow: 1 }}
         keyboardShouldPersistTaps="handled"
       >
-        {Object.keys(ALL_OBJECTS_DATA)
-          .filter((objectName) => objectName.toLowerCase().includes(search.toLocaleLowerCase()))
+        {filtered
+          .slice(0, SEARCH_RESULTS_COUNT_LIMIT)
           .map((name) => (
             <ListItem
               key={name}
               bottomDivider
-              onPress={() => navigation.dispatch(TabActions.jumpTo('ObjectPage', { name }))}
+              onPress={() => navigation.dispatch(StackActions.push('ObjectPage', { name }))}
+              // style={!name.toLowerCase().includes(search.toLocaleLowerCase())
+              //   ? { opacity: 0, height: 0 } : {}}
             >
               <Avatar source={ALL_OBJECTS_DATA[name].image} />
               <ListItem.Content>
@@ -42,10 +68,12 @@ const SecondPage = ({ navigation }) => {
               </ListItem.Content>
             </ListItem>
           ))}
+
+        {filtered.length > SEARCH_RESULTS_COUNT_LIMIT ? SeeMoreResult(navigation) : null}
       </ScrollView>
     </View>
 
   );
 };
 
-export default SecondPage;
+export default SearchPage;

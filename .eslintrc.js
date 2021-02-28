@@ -19,6 +19,9 @@ module.exports = {
   ],
   rules: {
     'react/jsx-filename-extension': [0],
+    'react/prop-types': 0,
     'linebreak-style': 0,
+    'react/jsx-props-no-spreading': 0,
+    'react/destructuring-assignment': 0,
   },
 };

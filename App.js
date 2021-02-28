@@ -4,6 +4,7 @@ import {
   DrawerItemList,
 } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
 import {
   View,
@@ -13,22 +14,22 @@ import {
 } from 'react-native-elements';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import potionLogo from './assets/potion_logo.png';
-import ObjectPage from './pages/ObjectPage.js';
-import SearchPage from './pages/SearchPage.js';
+import ObjectPage from './pages/ObjectPage';
+import SearchPage from './pages/SearchPage';
 
 // https://coolors.co/264653-2a9d8f-e9c46a-f4a261-e76f51
 
-const HIDDEN_DRAWER_ITEMS = ['ObjectPage'];
+// const HIDDEN_DRAWER_ITEMS = ['ObjectPage'];
 
 function CustomDrawerContent(props) { // https://stackoverflow.com/questions/62204060/how-to-hide-drawer-item-in-react-navigation-5x
   const { state, ...rest } = props;
   const newState = { ...state };
-  newState.routes = newState.routes.filter(
-    (item) => !HIDDEN_DRAWER_ITEMS.includes(item.name),
-  );
-  newState.routeNames = newState.routeNames.filter(
-    (item) => !HIDDEN_DRAWER_ITEMS.includes(item),
-  );
+  // newState.routes = newState.routes.filter(
+  //   (item) => !HIDDEN_DRAWER_ITEMS.includes(item.name),
+  // );
+  // newState.routeNames = newState.routeNames.filter(
+  //   (item) => !HIDDEN_DRAWER_ITEMS.includes(item),
+  // );
 
   return (
     <DrawerContentScrollView {...props}>
@@ -43,6 +44,16 @@ function CustomDrawerContent(props) { // https://stackoverflow.com/questions/622
   );
 }
 
+const Stack = createStackNavigator();
+
+function Root() {
+  return (
+    <Stack.Navigator headerMode="none">
+      <Stack.Screen name="Search" component={SearchPage} />
+      <Stack.Screen name="ObjectPage" component={ObjectPage} />
+    </Stack.Navigator>
+  );
+}
 const Drawer = createDrawerNavigator();
 
 function MyDrawer() {
@@ -75,9 +86,7 @@ function MyDrawer() {
         ),
       })}
     >
-      <Drawer.Screen name="Search" component={SearchPage} />
-      {/* Hidden  */}
-      <Drawer.Screen name="ObjectPage" component={ObjectPage} />
+      <Drawer.Screen name="All Items" component={Root} />
     </Drawer.Navigator>
   );
 }

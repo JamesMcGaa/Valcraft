@@ -1,45 +1,23 @@
 // Custom Navigation Drawer / Sidebar with Image and Icon in Menu Options
 // https://aboutreact.com/custom-navigation-drawer-sidebar-with-image-and-icon-in-menu-options/
 
-import React, { useState } from 'react';
+import { StackActions } from '@react-navigation/native';
+import React from 'react';
 import {
-  Image, StyleSheet, Text, TouchableOpacity, View,
+  Image, StyleSheet, Text, View,
 } from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
-import { FlatGrid } from 'react-native-super-grid';
-import AntIcon from 'react-native-vector-icons/AntDesign';
 import {
-  Avatar, Badge, Card, ListItem, SearchBar,
+  Avatar, Badge, Card, ListItem,
 } from 'react-native-elements';
-import { TabActions } from '@react-navigation/native';
-import {
-  OBJECT_NAMES, ALL_OBJECTS_DATA,
-} from '../data';
+import { ScrollView } from 'react-native-gesture-handler';
+import { ALL_OBJECTS_DATA } from '../data';
 
-const INCREMENT_DECREMENT_DESIRE_BUTTON_SIZE = 40;
-
-const styles = StyleSheet.create({
-
-});
+const styles = StyleSheet.create({});
 
 const SUBSECTION_KEYS = Object.freeze({
   FUNDAMENTAL: 'FUNDAMENTAL',
   RECIPE: 'RECIPE',
 });
-
-function handle(key, data, subsections, navigation) {
-  console.log('handle', key, data[key]);
-  if (data[key] !== '') { // CSV to JSON exports these as nonnull
-    switch (key) {
-      case 'recipe':
-        console.log('recip');
-        renderRecipe(data, subsections, navigation);
-        break;
-      default:
-        break;
-    }
-  }
-}
 
 function renderFundamentalSubsection(data) {
   return (
@@ -80,7 +58,7 @@ function renderRecipe(data, subsections, navigation) {
           <ListItem
             key={reqData.name}
             bottomDivider
-            onPress={() => navigation.dispatch(TabActions.jumpTo('ObjectPage', { name: reqData.name }))}
+            onPress={() => navigation.dispatch(StackActions.push('ObjectPage', { name: reqData.name }))}
           >
             <View>
               <Avatar source={reqData.image} />
@@ -101,15 +79,26 @@ function renderRecipe(data, subsections, navigation) {
   );
 }
 
+function handle(key, data, subsections, navigation) {
+  if (data[key] !== '') { // CSV to JSON exports these as nonnull
+    switch (key) {
+      case 'recipe':
+        renderRecipe(data, subsections, navigation);
+        break;
+      default:
+        break;
+    }
+  }
+}
+
 function generateSubsections(data, navigation) {
   const subsections = [];
   subsections.push(
     renderFundamentalSubsection(data),
   );
-
-  for (const [key, value] of Object.entries(data)) {
+  Object.keys(data).forEach((key) => {
     handle(key, data, subsections, navigation);
-  }
+  });
   return subsections;
 }
 

@@ -37,13 +37,22 @@ function renderFundamentalSubsection(data) {
           value={730}
         />
       </View>
+      <Text style={{ alignSelf: 'center', paddingBottom: 10 }}>
+        ❝
+        {data.description}
+        ❞
+      </Text>
       <Text style={{ fontWeight: 'bold' }}>
         {'Type: '}
         {data.type}
       </Text>
-      <Text style={{ marginBottom: 10 }}>
-        {data.description}
-      </Text>
+      {data.ID !== '' ? (
+        <Text style={{ fontWeight: 'bold' }}>
+          {'ID: '}
+          {data.ID}
+        </Text>
+      ) : null}
+
     </Card>
   );
 }
@@ -79,11 +88,26 @@ function renderRecipe(data, subsections, navigation) {
   );
 }
 
+function renderLocation(data, subsections, navigation) {
+  subsections.push(
+    <Card key={SUBSECTION_KEYS.RECIPE}>
+      <Card.Title>Location</Card.Title>
+      <Card.Divider />
+      <Text>
+        {data.location}
+      </Text>
+    </Card>,
+  );
+}
+
 function handle(key, data, subsections, navigation) {
   if (data[key] !== '') { // CSV to JSON exports these as nonnull
     switch (key) {
       case 'recipe':
         renderRecipe(data, subsections, navigation);
+        break;
+      case 'location':
+        renderLocation(data, subsections, navigation);
         break;
       default:
         break;

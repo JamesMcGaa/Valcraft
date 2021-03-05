@@ -5,6 +5,7 @@ import {
 } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { LinearGradient } from 'expo-linear-gradient';
 import * as React from 'react';
 import {
   View,
@@ -13,7 +14,7 @@ import {
   Header, Icon, Image, Text,
 } from 'react-native-elements';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import potionLogo from './assets/potion_logo.png';
+import potionLogo from './assets/pixel_fire_logo.png';
 import ObjectPage from './pages/ObjectPage';
 import SearchPage from './pages/SearchPage';
 
@@ -36,7 +37,9 @@ function CustomDrawerContent(props) { // https://stackoverflow.com/questions/622
       <View style={{ alignItems: 'center' }}>
         <Image
           source={potionLogo}
-          style={{ width: 120, height: 120 }}
+          style={{
+            width: 150, height: 150, margin: 10, resizeMode: 'contain',
+          }}
         />
       </View>
       <DrawerItemList state={newState} {...rest} />
@@ -62,8 +65,10 @@ function MyDrawer() {
       drawerContent={(props) => <CustomDrawerContent {...props} />}
       screenOptions={({ navigation }) => ({
         headerShown: true,
+
         header: () => (
           <Header
+            backgroundColor="#4B3223"
             leftComponent={(
               <Icon
                 name="navicon"

@@ -14,9 +14,12 @@ import {
   Header, Icon, Image, Text,
 } from 'react-native-elements';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import potionLogo from './assets/pixel_fire_logo.png';
 import ObjectPage from './pages/ObjectPage';
 import SearchPage from './pages/SearchPage';
+import RequirementsPage from './pages/RequirementsPage';
 
 // https://coolors.co/264653-2a9d8f-e9c46a-f4a261-e76f51
 
@@ -52,11 +55,45 @@ const Stack = createStackNavigator();
 function Root() {
   return (
     <Stack.Navigator headerMode="none">
-      <Stack.Screen name="Search" component={SearchPage} />
+      <Stack.Screen name="SearchPage" component={SearchPage} />
       <Stack.Screen name="ObjectPage" component={ObjectPage} />
+      <Stack.Screen name="RequirementsPage" component={RequirementsPage} />
     </Stack.Navigator>
   );
 }
+
+function HomeScreen() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Home!</Text>
+    </View>
+  );
+}
+
+const Tab = createBottomTabNavigator();
+
+function RequirementsTabRoot() {
+  return (
+    <Tab.Navigator
+      screenOptions={({ route }) => ({
+        tabBarIcon: ({ focused, color, size }) => {
+          const iconName = focused
+            ? 'ios-information-circle'
+            : 'ios-information-circle-outline';
+          return <Ionicons name={iconName} size={size} color={color} />;
+        },
+      })}
+      tabBarOptions={{
+        activeTintColor: 'tomato',
+        inactiveTintColor: 'gray',
+      }}
+    >
+      <Tab.Screen name="Materials Required" component={HomeScreen} />
+      <Tab.Screen name="Items" component={RequirementsPage} />
+    </Tab.Navigator>
+  );
+}
+
 const Drawer = createDrawerNavigator();
 
 function MyDrawer() {
@@ -92,6 +129,7 @@ function MyDrawer() {
       })}
     >
       <Drawer.Screen name="All Items" component={Root} />
+      <Drawer.Screen name="RequirementsPage" component={RequirementsTabRoot} />
     </Drawer.Navigator>
   );
 }

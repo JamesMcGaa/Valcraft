@@ -72,7 +72,6 @@ const SearchPage = ({ navigation }) => {
         {filtered.length > SEARCH_RESULTS_COUNT_LIMIT ? SeeMoreResult(navigation) : null}
       </ScrollView>
     </View>
-
   );
 };
 

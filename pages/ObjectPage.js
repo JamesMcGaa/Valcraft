@@ -1,7 +1,7 @@
 // Custom Navigation Drawer / Sidebar with Image and Icon in Menu Options
 // https://aboutreact.com/custom-navigation-drawer-sidebar-with-image-and-icon-in-menu-options/
 
-import { StackActions } from '@react-navigation/native';
+import { StackActions, useFocusEffect } from '@react-navigation/native';
 import React, { useEffect, useState } from 'react';
 import {
   Image, StyleSheet, Text, View, ScrollView,
@@ -44,12 +44,13 @@ function renderRecipe(data, subsections, navigation) {
   subsections.push(
     <Card key={SUBSECTION_KEYS.RECIPE}>
       <Card.Title>Recipe</Card.Title>
-      {data.recipe.map((req) => {
+      {data.recipe.map((req, index) => {
         const reqData = ALL_OBJECTS_DATA[req.name];
+        console.log(index);
         return (
           <ListItem
             key={reqData.name}
-            bottomDivider
+            bottomDivider={index !== data.recipe.length - 1}
             onPress={() => navigation.dispatch(StackActions.push('ObjectPage', { name: reqData.name }))}
           >
             <View>
@@ -113,15 +114,13 @@ function generateSubsections(data, navigation) {
 function ObjectPage(props) {
   const [count, setCount] = useState('0');
   const { name } = props.route.params;
-  useEffect(() => {
-    async function getAndSet() {
+  useFocusEffect(
+    React.useCallback(() => {
       retrieveData(name).then((data) => {
         setCount(data);
       });
-    }
-    getAndSet();
-  },
-  []);
+    }, []),
+  );
   const data = ALL_OBJECTS_DATA[name];
 
   const subsections = generateSubsections(data, props.navigation);
@@ -197,7 +196,7 @@ function ObjectPage(props) {
             size={40}
             onPress={() => {
               const countAfterDecrement = parseInt(count, 10) - 1;
-              if (countAfterDecrement > 0) {
+              if (countAfterDecrement >= 0) {
                 const stringFormatted = countAfterDecrement.toString();
                 storeData(name, stringFormatted).then(() => setCount(stringFormatted));
               }

@@ -1,3 +1,4 @@
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {
   createDrawerNavigator,
   DrawerContentScrollView,
@@ -5,7 +6,6 @@ import {
 } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { LinearGradient } from 'expo-linear-gradient';
 import * as React from 'react';
 import {
   View,
@@ -14,33 +14,21 @@ import {
   Header, Icon, Image, Text,
 } from 'react-native-elements';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import potionLogo from './assets/pixel_fire_logo.png';
-import ObjectPage from './pages/ObjectPage';
-import SearchPage from './pages/SearchPage';
-import RequirementsPage from './pages/RequirementsPage';
+import drawerLogo from './assets/pixel_fire_logo.png';
 import MaterialsPage from './pages/MaterialsPage';
+import ObjectPage from './pages/ObjectPage';
+import RequirementsPage from './pages/RequirementsPage';
+import SearchPage from './pages/SearchPage';
 
-// https://coolors.co/264653-2a9d8f-e9c46a-f4a261-e76f51
-
-// const HIDDEN_DRAWER_ITEMS = ['ObjectPage'];
-
-function CustomDrawerContent(props) { // https://stackoverflow.com/questions/62204060/how-to-hide-drawer-item-in-react-navigation-5x
+function CustomDrawerContent(props) {
   const { state, ...rest } = props;
   const newState = { ...state };
-  // newState.routes = newState.routes.filter(
-  //   (item) => !HIDDEN_DRAWER_ITEMS.includes(item.name),
-  // );
-  // newState.routeNames = newState.routeNames.filter(
-  //   (item) => !HIDDEN_DRAWER_ITEMS.includes(item),
-  // );
-
   return (
     <DrawerContentScrollView {...props}>
       <View style={{ alignItems: 'center' }}>
         <Image
-          source={potionLogo}
+          source={drawerLogo}
           style={{
             width: 150, height: 150, margin: 10, resizeMode: 'contain',
           }}
@@ -81,7 +69,7 @@ function RequirementsTabRoot() {
       }}
     >
       <Tab.Screen name="Materials Required" component={MaterialsPage} />
-      <Tab.Screen name="Items" component={RequirementsPage} />
+      <Tab.Screen name="Tracked Items" component={RequirementsPage} />
     </Tab.Navigator>
   );
 }
@@ -121,7 +109,7 @@ function MyDrawer() {
       })}
     >
       <Drawer.Screen name="All Items" component={Root} />
-      <Drawer.Screen name="RequirementsPage" component={RequirementsTabRoot} />
+      <Drawer.Screen name="Tracked Items" component={RequirementsTabRoot} />
     </Drawer.Navigator>
   );
 }

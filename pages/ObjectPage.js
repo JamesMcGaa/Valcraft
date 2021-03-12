@@ -1,18 +1,16 @@
 // Custom Navigation Drawer / Sidebar with Image and Icon in Menu Options
 // https://aboutreact.com/custom-navigation-drawer-sidebar-with-image-and-icon-in-menu-options/
 
-import { StackActions, useFocusEffect } from '@react-navigation/native';
-import React, { useEffect, useState } from 'react';
-import {
-  Image, StyleSheet, Text, View, ScrollView,
-} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { StackActions, useFocusEffect } from '@react-navigation/native';
+import React, { useState } from 'react';
 import {
-  Avatar, Badge, Card, ListItem, Input, Icon,
+  Image, ScrollView, Text, View,
+} from 'react-native';
+import {
+  Avatar, Badge, Card, Icon, Input, ListItem,
 } from 'react-native-elements';
 import { ALL_OBJECTS_DATA } from '../data';
-
-const styles = StyleSheet.create({});
 
 async function storeData(key, val) {
   try {
@@ -25,7 +23,6 @@ async function storeData(key, val) {
 async function retrieveData(key) {
   try {
     const value = await AsyncStorage.getItem(key);
-    console.log(value);
     if (value !== null) {
       return value;
     }
@@ -46,7 +43,6 @@ function renderRecipe(data, subsections, navigation) {
       <Card.Title>Recipe</Card.Title>
       {data.recipe.map((req, index) => {
         const reqData = ALL_OBJECTS_DATA[req.name];
-        console.log(index);
         return (
           <ListItem
             key={reqData.name}
@@ -72,7 +68,7 @@ function renderRecipe(data, subsections, navigation) {
   );
 }
 
-function renderLocation(data, subsections, navigation) {
+function renderLocation(data, subsections) {
   subsections.push(
     <Card key={SUBSECTION_KEYS.RECIPE}>
       <Card.Title>Location</Card.Title>
@@ -95,7 +91,7 @@ function handle(key, data, subsections, navigation) {
         renderRecipe(data, subsections, navigation);
         break;
       case 'location':
-        renderLocation(data, subsections, navigation);
+        renderLocation(data, subsections);
         break;
       default:
         break;

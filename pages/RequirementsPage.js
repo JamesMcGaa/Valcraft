@@ -3,10 +3,10 @@
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFocusEffect } from '@react-navigation/native';
-import React, { useEffect, useState } from 'react';
-import { TextInput, View } from 'react-native';
+import React, { useState } from 'react';
+import { View } from 'react-native';
 import {
-  Avatar, Card, Icon, Input, ListItem, Text,
+  Avatar, Icon, Input, ListItem,
 } from 'react-native-elements';
 import { ScrollView } from 'react-native-gesture-handler';
 import { ALL_OBJECTS_DATA } from '../data';
@@ -35,9 +35,8 @@ async function retrieveData(key) {
   return '0';
 }
 
-function Requirement({ name, navigation }) {
+function Requirement({ name }) {
   const [count, setCount] = useState('0');
-
   useFocusEffect(
     React.useCallback(() => {
       retrieveData(name).then((data) => {
@@ -104,7 +103,7 @@ function Requirement({ name, navigation }) {
   );
 }
 
-function RequirementsPage({ navigation }) {
+function RequirementsPage() {
   const [reqs, setReqs] = useState(null);
 
   useFocusEffect(
@@ -120,7 +119,7 @@ function RequirementsPage({ navigation }) {
         keyboardShouldPersistTaps="handled"
       >
         {reqs !== null ? reqs
-          .map((name) => <Requirement name={name} key={name} navigation={navigation} />) : null}
+          .map((name) => <Requirement name={name} key={name} />) : null}
       </ScrollView>
     </View>
   );

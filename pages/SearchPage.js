@@ -58,8 +58,6 @@ const SearchPage = ({ navigation }) => {
               key={name}
               bottomDivider
               onPress={() => navigation.dispatch(StackActions.push('ObjectPage', { name }))}
-              // style={!name.toLowerCase().includes(search.toLocaleLowerCase())
-              //   ? { opacity: 0, height: 0 } : {}}
             >
               <Avatar source={ALL_OBJECTS_DATA[name].image} />
               <ListItem.Content>
@@ -68,7 +66,6 @@ const SearchPage = ({ navigation }) => {
               </ListItem.Content>
             </ListItem>
           ))}
-
         {filtered.length > SEARCH_RESULTS_COUNT_LIMIT ? SeeMoreResult(navigation) : null}
       </ScrollView>
     </View>

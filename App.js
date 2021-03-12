@@ -20,6 +20,7 @@ import potionLogo from './assets/pixel_fire_logo.png';
 import ObjectPage from './pages/ObjectPage';
 import SearchPage from './pages/SearchPage';
 import RequirementsPage from './pages/RequirementsPage';
+import MaterialsPage from './pages/MaterialsPage';
 
 // https://coolors.co/264653-2a9d8f-e9c46a-f4a261-e76f51
 
@@ -51,27 +52,18 @@ function CustomDrawerContent(props) { // https://stackoverflow.com/questions/622
 }
 
 const Stack = createStackNavigator();
-
 function Root() {
   return (
     <Stack.Navigator headerMode="none">
       <Stack.Screen name="SearchPage" component={SearchPage} />
       <Stack.Screen name="ObjectPage" component={ObjectPage} />
       <Stack.Screen name="RequirementsPage" component={RequirementsPage} />
+      <Stack.Screen name="MaterialsPage" component={MaterialsPage} />
     </Stack.Navigator>
   );
 }
 
-function HomeScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Home!</Text>
-    </View>
-  );
-}
-
 const Tab = createBottomTabNavigator();
-
 function RequirementsTabRoot() {
   return (
     <Tab.Navigator
@@ -88,7 +80,7 @@ function RequirementsTabRoot() {
         inactiveTintColor: 'gray',
       }}
     >
-      <Tab.Screen name="Materials Required" component={HomeScreen} />
+      <Tab.Screen name="Materials Required" component={MaterialsPage} />
       <Tab.Screen name="Items" component={RequirementsPage} />
     </Tab.Navigator>
   );

@@ -1,7 +1,3 @@
-// Custom Navigation Drawer / Sidebar with Image and Icon in Menu Options
-// https://aboutreact.com/custom-navigation-drawer-sidebar-with-image-and-icon-in-menu-options/
-
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { StackActions, useFocusEffect } from '@react-navigation/native';
 import React, { useState } from 'react';
 import {
@@ -11,26 +7,7 @@ import {
   Avatar, Badge, Card, Icon, Input, ListItem,
 } from 'react-native-elements';
 import { ALL_OBJECTS_DATA } from '../data';
-
-async function storeData(key, val) {
-  try {
-    await AsyncStorage.setItem(key, val.toString());
-  } catch (error) {
-    console.log(error);
-  }
-}
-
-async function retrieveData(key) {
-  try {
-    const value = await AsyncStorage.getItem(key);
-    if (value !== null) {
-      return value;
-    }
-  } catch (error) {
-    console.log(error);
-  }
-  return '0';
-}
+import { storeData, retrieveData, isNormalInteger } from '../utils';
 
 const SUBSECTION_KEYS = Object.freeze({
   FUNDAMENTAL: 'FUNDAMENTAL',
@@ -78,10 +55,6 @@ function renderLocation(data, subsections) {
       </Text>
     </Card>,
   );
-}
-
-function isNormalInteger(str) {
-  return /^\+?(0|[1-9]\d*)$/.test(str);
 }
 
 function handle(key, data, subsections, navigation) {

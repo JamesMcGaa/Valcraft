@@ -15,11 +15,17 @@ import {
 } from 'react-native-elements';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import { Linking } from 'expo';
 import drawerLogo from './assets/pixel_fire_logo.png';
 import MaterialsPage from './pages/MaterialsPage';
 import ObjectPage from './pages/ObjectPage';
 import RequirementsPage from './pages/RequirementsPage';
 import SearchPage from './pages/SearchPage';
+import HomePage from './pages/HomePage';
+
+function loadInBrowser(url) {
+  Linking.openURL(url).catch((err) => console.error("Couldn't load page", err));
+}
 
 function CustomDrawerContent(props) {
   const { state, ...rest } = props;
@@ -44,6 +50,7 @@ function Root() {
   return (
     <Stack.Navigator headerMode="none">
       <Stack.Screen name="SearchPage" component={SearchPage} />
+      <Stack.Screen name="HomePage" component={HomePage} />
       <Stack.Screen name="ObjectPage" component={ObjectPage} />
       <Stack.Screen name="RequirementsPage" component={RequirementsPage} />
       <Stack.Screen name="MaterialsPage" component={MaterialsPage} />
@@ -93,21 +100,25 @@ function MyDrawer() {
                 color="#FFF"
                 size={40}
                 onPress={() => navigation.openDrawer()}
+                style={{ alignSelf: 'center' }}
               />
             )}
             centerComponent={<Text h4 style={{ color: 'white' }}>Valcraft</Text>}
             rightComponent={(
               <Icon
-                name="sc-telegram"
-                type="evilicon"
+                name="bug-report"
+                type="ionicons"
                 color="#FFF"
-                size={40}
+                size={34}
+                onPress={() => loadInBrowser('https://forms.gle/sr9koPWazb1v4uDCA')}
+                style={{ alignSelf: 'center' }}
               />
             )}
           />
         ),
       })}
     >
+      <Drawer.Screen name="About" component={HomePage} />
       <Drawer.Screen name="All Items" component={Root} />
       <Drawer.Screen name="Tracked Items" component={RequirementsTabRoot} />
     </Drawer.Navigator>

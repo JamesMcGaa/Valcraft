@@ -3,9 +3,10 @@ import { useFocusEffect } from '@react-navigation/native';
 import React, { useState } from 'react';
 import { View } from 'react-native';
 import {
-  Avatar, Icon, Input, ListItem,
+  Avatar, Button, Icon, Input, ListItem,
 } from 'react-native-elements';
 import { ScrollView } from 'react-native-gesture-handler';
+import { ConfirmDialog } from 'react-native-simple-dialogs';
 import { ALL_OBJECTS_DATA } from '../data';
 import { storeData, retrieveData, isNormalInteger } from '../utils';
 
@@ -81,6 +82,7 @@ function Requirement({ name, navigation }) {
 
 function RequirementsPage({ navigation }) {
   const [reqs, setReqs] = useState(null);
+  const [visible, setVisible] = useState(false);
 
   useFocusEffect(
     React.useCallback(() => {
@@ -94,6 +96,29 @@ function RequirementsPage({ navigation }) {
         contentContainerStyle={{ flexGrow: 1 }}
         keyboardShouldPersistTaps="handled"
       >
+        <ConfirmDialog
+          title="Confirmation"
+          message="Are you sure you want to clear your tracked requirements?"
+          visible={visible}
+          onTouchOutside={() => setVisible(false)}
+          positiveButton={{
+            title: 'Clear',
+            onPress: () => AsyncStorage.clear().then((data) => {
+              setReqs(null);
+              setVisible(false);
+            }),
+          }}
+          negativeButton={{
+            title: 'Cancel',
+            onPress: () => setVisible(false),
+          }}
+        />
+        <Button
+          title="Clear All"
+          type="outline"
+          buttonStyle={{ margin: 3, borderWidth: 0.5, borderRadius: 9 }}
+          onPress={() => setVisible(true)}
+        />
         {reqs !== null ? reqs
           .map((name) => <Requirement name={name} key={name} navigation={navigation} />) : null}
       </ScrollView>

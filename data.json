@@ -1348,7 +1348,27 @@
     "description": "Better than nothing.",
     "ID": "ArmorRagsChest",
     "type": "Armor",
-    "recipe": "5 Leather scraps",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 200, 
+          "Armor": 1
+        },
+        "recipe": "5 Leather scraps",
+        "prerequisites": "Workbench: Level 1"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 250, 
+          "Armor": 2
+        },
+        "recipe": "1 Rag Tunic (I) 5 Leather scraps",
+        "prerequisites": "Workbench: Level 2"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },

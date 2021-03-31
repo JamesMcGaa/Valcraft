@@ -14,16 +14,20 @@ const OBJECT_NAMES = Object.freeze({
 
 const mentioned = new Set();
 const loaded = new Set();
+const ALL_OBJECTS_DATA = {};
 
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-const ALL_OBJECTS_DATA = {};
-RAW_OBJECTS_DATA.forEach((rawData) => {
+function processRawData(rawData) {
   loaded.add(rawData.name);
   ALL_OBJECTS_DATA[rawData.name] = rawData;
-  ALL_OBJECTS_DATA[rawData.name].image = image_importer(rawData.name);
+  if ('original_name' in rawData) {
+    ALL_OBJECTS_DATA[rawData.name].image = image_importer(rawData.original_name);
+  } else {
+    ALL_OBJECTS_DATA[rawData.name].image = image_importer(rawData.name);
+  }
   if (rawData.recipe !== '') {
     const modifiedRecipe = [];
     const tokens = rawData.recipe.split(' ').filter(Boolean);
@@ -52,7 +56,30 @@ RAW_OBJECTS_DATA.forEach((rawData) => {
       mentioned.add(element.name);
     });
   }
+}
+
+function processUpgradable(rawData) {
+  rawData.upgrades.forEach((upgrade) => {
+    const newData = {};
+    Object.keys(rawData).forEach((key) => {
+      newData[key] = rawData[key];
+    });
+    newData.original_name = rawData.name;
+    newData.name = `${newData.name} (${upgrade.quality})`;
+    newData.recipe = upgrade.recipe;
+    newData.stats = upgrade.stats;
+    processRawData(newData);
+  });
+}
+
+RAW_OBJECTS_DATA.forEach((rawData) => {
+  if ('upgrades' in rawData) {
+    processUpgradable(rawData);
+  } else {
+    processRawData(rawData);
+  }
 });
+
 const a_minus_b = new Set([...mentioned].filter((x) => !loaded.has(x)));
 console.log(a_minus_b); // all recipe items that arent contained in my data
 

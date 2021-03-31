@@ -25,6 +25,7 @@ function Requirement({ name }) {
     <ListItem
       key={name}
       bottomDivider
+      onPress={() => navigation.navigate('ObjectPage', { name })}
     >
       <View style={{ flexDirection: 'row', maxHeight: 30, marginBottom: 10 }}>
         <Avatar source={ALL_OBJECTS_DATA[name].image} />

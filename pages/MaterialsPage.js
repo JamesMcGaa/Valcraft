@@ -34,6 +34,19 @@ function setOrIncrement(obj, key, val) {
   obj[key] += val;
 }
 
+function recursivelyCreateNewMaterials(newMaterials, name, count) {
+  const { recipe } = ALL_OBJECTS_DATA[name];
+  if (count !== 0) {
+    if (recipe === '') {
+      setOrIncrement(newMaterials, name, count);
+    } else {
+      recipe.forEach((element) => {
+        recursivelyCreateNewMaterials(newMaterials, element.name, count * element.quantity);
+      });
+    }
+  }
+}
+
 function MaterialsPage({ navigation }) {
   const [materials, setMaterials] = useState({});
   useFocusEffect(
@@ -45,15 +58,7 @@ function MaterialsPage({ navigation }) {
             const name = value[0];
             const count = parseInt(value[1], 10);
             const { recipe } = ALL_OBJECTS_DATA[name];
-            if (count !== 0) {
-              if (recipe === '') {
-                setOrIncrement(newMaterials, name, count);
-              } else {
-                recipe.forEach((element) => {
-                  setOrIncrement(newMaterials, element.name, count * element.quantity);
-                });
-              }
-            }
+            recursivelyCreateNewMaterials(newMaterials, name, count);
           });
           setMaterials(newMaterials);
         });

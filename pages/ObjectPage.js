@@ -12,6 +12,9 @@ import { storeData, retrieveData, isNormalInteger } from '../utils';
 const SUBSECTION_KEYS = Object.freeze({
   FUNDAMENTAL: 'FUNDAMENTAL',
   RECIPE: 'RECIPE',
+  NOTES: 'NOTES',
+  PREREQUISITES: 'PREREQUISITES',
+  STATS: 'STATS',
 });
 
 function renderRecipe(data, subsections, navigation) {
@@ -57,9 +60,58 @@ function renderLocation(data, subsections) {
   );
 }
 
+function renderNotes(data, subsections) {
+  subsections.push(
+    <Card key={SUBSECTION_KEYS.NOTES}>
+      <Card.Title>Description</Card.Title>
+      <Card.Divider />
+      <Text>
+        {data.notes}
+      </Text>
+    </Card>,
+  );
+}
+
+function renderPrerequisites(data, subsections) {
+  subsections.push(
+    <Card key={SUBSECTION_KEYS.PREREQUISITES}>
+      <Card.Title>Prerequisites</Card.Title>
+      <Card.Divider />
+      <Text>
+        {data.prerequisites}
+      </Text>
+    </Card>,
+  );
+}
+
+function renderStats(data, subsections) {
+  subsections.push(
+    <Card key={SUBSECTION_KEYS.STATS}>
+      <Card.Title>Stats</Card.Title>
+      <Card.Divider />
+      {Object.keys(data.stats).map((key) => (
+        <Text>
+          {`${key}: `}
+          {data.stats[key]}
+        </Text>
+      ))}
+
+    </Card>,
+  );
+}
+
 function handle(key, data, subsections, navigation) {
   if (data[key] !== '') { // CSV to JSON exports these as nonnull
     switch (key) {
+      case 'notes':
+        renderNotes(data, subsections, navigation);
+        break;
+      case 'prerequisites':
+        renderPrerequisites(data, subsections, navigation);
+        break;
+      case 'stats':
+        renderStats(data, subsections, navigation);
+        break;
       case 'recipe':
         renderRecipe(data, subsections, navigation);
         break;

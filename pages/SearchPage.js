@@ -54,7 +54,7 @@ const SearchPage = ({ navigation }) => {
             <ListItem
               key={name}
               bottomDivider
-              onPress={() => navigation.dispatch(StackActions.push('ObjectPage', { name }))}
+              onPress={() => navigation.navigate('ObjectPage', { name })}
             >
               <Avatar source={ALL_OBJECTS_DATA[name].image} />
               <ListItem.Content>

@@ -90,7 +90,7 @@ function renderStats(data, subsections) {
       <Card.Title>Stats</Card.Title>
       <Card.Divider />
       {Object.keys(data.stats).map((key) => (
-        <Text>
+        <Text key={key}>
           {`${key}: `}
           {data.stats[key]}
         </Text>

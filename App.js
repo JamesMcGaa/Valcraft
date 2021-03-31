@@ -23,6 +23,7 @@ import RequirementsPage from './pages/RequirementsPage';
 import SearchPage from './pages/SearchPage';
 import HomePage from './pages/HomePage';
 
+const DISPLAY_DRAWER_ITEMS = ['About', 'All Items', 'Tracked Items'];
 function loadInBrowser(url) {
   Linking.openURL(url).catch((err) => console.error("Couldn't load page", err));
 }
@@ -30,6 +31,12 @@ function loadInBrowser(url) {
 function CustomDrawerContent(props) {
   const { state, ...rest } = props;
   const newState = { ...state };
+  newState.routes = newState.routes.filter(
+    (item) => DISPLAY_DRAWER_ITEMS.includes(item.name),
+  );
+  newState.routeNames = newState.routeNames.filter(
+    (item) => DISPLAY_DRAWER_ITEMS.includes(item),
+  );
   return (
     <DrawerContentScrollView {...props}>
       <View style={{ alignItems: 'center' }}>
@@ -49,11 +56,16 @@ const Stack = createStackNavigator();
 function Root() {
   return (
     <Stack.Navigator headerMode="none">
-      <Stack.Screen name="SearchPage" component={SearchPage} />
-      <Stack.Screen name="HomePage" component={HomePage} />
-      <Stack.Screen name="ObjectPage" component={ObjectPage} />
-      <Stack.Screen name="RequirementsPage" component={RequirementsPage} />
-      <Stack.Screen name="MaterialsPage" component={MaterialsPage} />
+      <Stack.Screen name="MyDrawer" component={MyDrawer} />
+    </Stack.Navigator>
+  );
+}
+
+function SearchStack() {
+  return (
+    <Stack.Navigator headerMode="none">
+      <Drawer.Screen name="SearchPage" component={SearchPage} />
+      <Drawer.Screen name="ObjectPage" component={ObjectPage} />
     </Stack.Navigator>
   );
 }
@@ -119,8 +131,11 @@ function MyDrawer() {
       })}
     >
       <Drawer.Screen name="About" component={HomePage} />
-      <Drawer.Screen name="All Items" component={Root} />
+      <Drawer.Screen name="All Items" component={SearchStack} />
       <Drawer.Screen name="Tracked Items" component={RequirementsTabRoot} />
+      <Drawer.Screen name="ObjectPage" component={ObjectPage} />
+      <Drawer.Screen name="RequirementsPage" component={RequirementsPage} />
+      <Drawer.Screen name="MaterialsPage" component={MaterialsPage} />
     </Drawer.Navigator>
   );
 }
@@ -129,7 +144,7 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <NavigationContainer>
-        <MyDrawer />
+        <Root />
       </NavigationContainer>
     </SafeAreaProvider>
   );

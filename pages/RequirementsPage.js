@@ -9,7 +9,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 import { ALL_OBJECTS_DATA } from '../data';
 import { storeData, retrieveData, isNormalInteger } from '../utils';
 
-function Requirement({ name }) {
+function Requirement({ name, navigation }) {
   const [count, setCount] = useState('0');
   useFocusEffect(
     React.useCallback(() => {
@@ -79,7 +79,7 @@ function Requirement({ name }) {
   );
 }
 
-function RequirementsPage() {
+function RequirementsPage({ navigation }) {
   const [reqs, setReqs] = useState(null);
 
   useFocusEffect(
@@ -95,7 +95,7 @@ function RequirementsPage() {
         keyboardShouldPersistTaps="handled"
       >
         {reqs !== null ? reqs
-          .map((name) => <Requirement name={name} key={name} />) : null}
+          .map((name) => <Requirement name={name} key={name} navigation={navigation} />) : null}
       </ScrollView>
     </View>
   );

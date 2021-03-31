@@ -51,17 +51,6 @@ function Requirement({ name, navigation }) {
           />
         </View>
         <Icon
-          name="plus"
-          type="evilicon"
-          color="#517fa4"
-          size={40}
-          onPress={() => {
-            const countAfterIncrement = parseInt(count, 10) + 1;
-            const stringFormatted = countAfterIncrement.toString();
-            storeData(name, stringFormatted).then(() => setCount(stringFormatted));
-          }}
-        />
-        <Icon
           name="minus"
           type="evilicon"
           color="#517fa4"
@@ -72,6 +61,17 @@ function Requirement({ name, navigation }) {
               const stringFormatted = countAfterDecrement.toString();
               storeData(name, stringFormatted).then(() => setCount(stringFormatted));
             }
+          }}
+        />
+        <Icon
+          name="plus"
+          type="evilicon"
+          color="#517fa4"
+          size={40}
+          onPress={() => {
+            const countAfterIncrement = parseInt(count, 10) + 1;
+            const stringFormatted = countAfterIncrement.toString();
+            storeData(name, stringFormatted).then(() => setCount(stringFormatted));
           }}
         />
       </View>

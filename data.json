@@ -1379,7 +1379,27 @@
     "description": "A simple remedy for nudity.",
     "ID": "ArmorRagsLegs",
     "type": "Armor",
-    "recipe": "5 Leather scraps",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 200, 
+          "Armor": 1
+        },
+        "recipe": "5 Leather scraps",
+        "prerequisites": "Workbench: Level 1"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 250, 
+          "Armor": 2
+        },
+        "recipe": "1 Rag Pants (I) 5 Leather scraps",
+        "prerequisites": "Workbench: Level 2"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
@@ -1390,7 +1410,45 @@
     "description": "A hood of toughened leather.",
     "ID": "HelmetLeather",
     "type": "Armor",
-    "recipe": "6 Deer hide",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 400, 
+          "Armor": 2
+        },
+        "recipe": "6 Deer hide",
+        "prerequisites": "Workbench: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 450, 
+          "Armor": 4
+        },
+        "recipe": "Leather Helmet (I) 6 Deer hide 5 Bone fragments",
+        "prerequisites": "Workbench: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 500, 
+          "Armor": 6
+        },
+        "recipe": "Leather Helmet (II) 12 Deer hide 10 Bone fragments",
+        "prerequisites": "Workbench: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 550, 
+          "Armor": 8
+        },
+        "recipe": "Leather Helmet (III) 18 Deer hide 15 Bone fragments",
+        "prerequisites": "Workbench: Level 5"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
@@ -1401,7 +1459,45 @@
     "description": "A tunic made from animal hide.",
     "ID": "ArmorLeatherChest",
     "type": "Armor",
-    "recipe": "6 Deer hide",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 400, 
+          "Armor": 2
+        },
+        "recipe": "6 Deer hide",
+        "prerequisites": "Workbench: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 450, 
+          "Armor": 4
+        },
+        "recipe": "Leather Tunic (I) 6 Deer hide 5 Bone fragments",
+        "prerequisites": "Workbench: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 500, 
+          "Armor": 6
+        },
+        "recipe": "Leather Tunic (II) 12 Deer hide 10 Bone fragments",
+        "prerequisites": "Workbench: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 550, 
+          "Armor": 8
+        },
+        "recipe": "Leather Tunic (III) 18 Deer hide 15 Bone fragments",
+        "prerequisites": "Workbench: Level 5"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
@@ -1412,7 +1508,45 @@
     "description": "They squeak a little when you walk.",
     "ID": "ArmorLeatherLegs",
     "type": "Armor",
-    "recipe": "6 Deer hide",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 400, 
+          "Armor": 2
+        },
+        "recipe": "6 Deer hide",
+        "prerequisites": "Workbench: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 450, 
+          "Armor": 4
+        },
+        "recipe": "Leather Pants (I) 6 Deer hide 5 Bone fragments",
+        "prerequisites": "Workbench: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 500, 
+          "Armor": 6
+        },
+        "recipe": "Leather Pants (II) 12 Deer hide 10 Bone fragments",
+        "prerequisites": "Workbench: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 550, 
+          "Armor": 8
+        },
+        "recipe": "Leather Pants (III) 18 Deer hide 15 Bone fragments",
+        "prerequisites": "Workbench: Level 5"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
@@ -1423,7 +1557,45 @@
     "description": "Rustic chic.",
     "ID": "CapeDeerHide",
     "type": "Armor",
-    "recipe": "4 Deer hide 5 Bone fragments",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 400, 
+          "Armor": 1
+        },
+        "recipe": "4 Deer hide 5 Bone fragments",
+        "prerequisites": "Workbench: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 450, 
+          "Armor": 2
+        },
+        "recipe": "Deer Hide Cape (I) 4 Deer hide 5 Bone fragments",
+        "prerequisites": "Workbench: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 500, 
+          "Armor": 3
+        },
+        "recipe": "Deer Hide Cape (II) 8 Deer hide 10 Bone fragments",
+        "prerequisites": "Workbench: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 550, 
+          "Armor": 4
+        },
+        "recipe": "Deer Hide Cape (III) 12 Deer hide 15 Bone fragments",
+        "prerequisites": "Workbench: Level 5"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
@@ -1434,7 +1606,45 @@
     "description": "Trollskin is hard to work but makes exceptional armor.",
     "ID": "HelmetTrollLeather",
     "type": "Armor",
-    "recipe": "5 Troll hide 3 Bone fragments",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 500, 
+          "Armor": 6
+        },
+        "recipe": "5 Troll hide",
+        "prerequisites": "Workbench: Level 3"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 700, 
+          "Armor": 8
+        },
+        "recipe": "Troll Leather Helmet (I) 2 Troll hide",
+        "prerequisites": "Workbench: Level 4"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 900, 
+          "Armor": 10
+        },
+        "recipe": "Troll Leather Helmet (II) 4 Troll hide",
+        "prerequisites": "Workbench: Level 5"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 1100, 
+          "Armor": 12
+        },
+        "recipe": "Troll Leather Helmet (III) 5 Troll hide",
+        "prerequisites": "Workbench: Level 6"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
@@ -1445,7 +1655,45 @@
     "description": "Trolls are hard to skin but their leather is tough and warm.",
     "ID": "ArmorTrollLeatherChest",
     "type": "Armor",
-    "recipe": "5 Troll hide",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 500, 
+          "Armor": 6
+        },
+        "recipe": "5 Troll hide",
+        "prerequisites": "Workbench: Level 3"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 700, 
+          "Armor": 8
+        },
+        "recipe": "Troll Leather Tunic (I) 2 Troll hide",
+        "prerequisites": "Workbench: Level 4"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 900, 
+          "Armor": 10
+        },
+        "recipe": "Troll Leather Tunic (II) 4 Troll hide",
+        "prerequisites": "Workbench: Level 5"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 1100, 
+          "Armor": 12
+        },
+        "recipe": "Troll Leather Tunic (III) 5 Troll hide",
+        "prerequisites": "Workbench: Level 6"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
@@ -1456,7 +1704,45 @@
     "description": "Leggings of tough troll hide.",
     "ID": "ArmorTrollLeatherLegs",
     "type": "Armor",
-    "recipe": "5 Troll hide",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 500, 
+          "Armor": 6
+        },
+        "recipe": "5 Troll hide",
+        "prerequisites": "Workbench: Level 3"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 700, 
+          "Armor": 8
+        },
+        "recipe": "Troll Leather Pants (I) 2 Troll hide",
+        "prerequisites": "Workbench: Level 4"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 900, 
+          "Armor": 10
+        },
+        "recipe": "Troll Leather Pants (II) 4 Troll hide",
+        "prerequisites": "Workbench: Level 5"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 1100, 
+          "Armor": 12
+        },
+        "recipe": "Troll Leather Pants (III) 5 Troll hide",
+        "prerequisites": "Workbench: Level 6"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
@@ -1467,7 +1753,45 @@
     "description": "Trollskin is tough and supple.",
     "ID": "CapeTrollHide",
     "type": "Armor",
-    "recipe": "10 Troll hide 10 Bone fragments",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 500, 
+          "Armor": 1
+        },
+        "recipe": "10 Troll hide 10 Bone fragments",
+        "prerequisites": "Workbench: Level 3"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 550, 
+          "Armor": 2
+        },
+        "recipe": "Troll Hide Cape (I) 5 Troll hide 5 Bone fragments",
+        "prerequisites": "Workbench: Level 4"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 600, 
+          "Armor": 3
+        },
+        "recipe": "Troll Hide Cape (II) 10 Troll hide 10 Bone fragments",
+        "prerequisites": "Workbench: Level 5"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 650, 
+          "Armor": 4
+        },
+        "recipe": "Troll Hide Cape (III) 15 Troll hide 15 Bone fragments",
+        "prerequisites": "Workbench: Level 6"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
@@ -1478,7 +1802,45 @@
     "description": "This will help to keep your brains inside your skull.",
     "ID": "HelmetBronze",
     "type": "Armor",
-    "recipe": "5 Bronze 2 Deer hide",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 1000, 
+          "Armor": 8
+        },
+        "recipe": "5 Bronze 2 Deer hide",
+        "prerequisites": "Forge: Level 1"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 1200, 
+          "Armor": 10
+        },
+        "recipe": "Bronze Helmet (I) 3 Bronze",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 1400, 
+          "Armor": 12
+        },
+        "recipe": "Bronze Helmet (II) 6 Bronze",
+        "prerequisites": "Forge: Level 3"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 1600, 
+          "Armor": 14
+        },
+        "recipe": "Bronze Helmet (III) 9 Bronze",
+        "prerequisites": "Forge: Level 4"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
@@ -1489,7 +1851,45 @@
     "description": "A breastplate of hammered bronze.",
     "ID": "ArmorBronzeChest",
     "type": "Armor",
-    "recipe": "5 Bronze 2 Deer hide",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 1000, 
+          "Armor": 8
+        },
+        "recipe": "5 Bronze 2 Deer hide",
+        "prerequisites": "Forge: Level 1"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 1200, 
+          "Armor": 10
+        },
+        "recipe": "Bronze Plate Cuirass (I) 3 Bronze",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 1400, 
+          "Armor": 12
+        },
+        "recipe": "Bronze Plate Cuirass (II) 6 Bronze",
+        "prerequisites": "Forge: Level 3"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 1600, 
+          "Armor": 14
+        },
+        "recipe": "Bronze Plate Cuirass (III) 9 Bronze",
+        "prerequisites": "Forge: Level 4"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
@@ -1500,7 +1900,45 @@
     "description": "Bronze greaves to sheild your legs.",
     "ID": "ArmorBronzeLegs",
     "type": "Armor",
-    "recipe": "5 Bronze 2 Deer hide",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 1000, 
+          "Armor": 8
+        },
+        "recipe": "5 Bronze 2 Deer hide",
+        "prerequisites": "Forge: Level 1"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 1200, 
+          "Armor": 10
+        },
+        "recipe": "Bronze Plate Leggings (I) 3 Bronze",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 1400, 
+          "Armor": 12
+        },
+        "recipe": "Bronze Plate Leggings (II) 6 Bronze",
+        "prerequisites": "Forge: Level 3"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 1600, 
+          "Armor": 14
+        },
+        "recipe": "Bronze Plate Leggings (III) 9 Bronze",
+        "prerequisites": "Forge: Level 4"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
@@ -1511,7 +1949,45 @@
     "description": "A helm of polished iron, fit for a hero.",
     "ID": "HelmetIron",
     "type": "Armor",
-    "recipe": "20 Iron 2 Deer hide",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 1200, 
+          "Armor": 14
+        },
+        "recipe": "20 Iron 2 Deer hide",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 1400, 
+          "Armor": 16
+        },
+        "recipe": "Iron Helmet (I) 5 Iron",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 1600, 
+          "Armor": 18
+        },
+        "recipe": "Iron Helmet (II) 10 Iron",
+        "prerequisites": "Forge: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 1800, 
+          "Armor": 20
+        },
+        "recipe": "Iron Helmet (III) 15 Iron",
+        "prerequisites": "Forge: Level 5"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
@@ -1522,7 +1998,45 @@
     "description": "An iron scale mail , this will turn all but the strongest of blows.",
     "ID": "ArmorIronChest",
     "type": "Armor",
-    "recipe": "20 Iron 2 Deer hide",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 1200, 
+          "Armor": 14
+        },
+        "recipe": "20 Iron 2 Deer hide",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 1400, 
+          "Armor": 16
+        },
+        "recipe": "Iron Scale Mail (I) 5 Iron",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 1600, 
+          "Armor": 18
+        },
+        "recipe": "Iron Scale Mail (II) 10 Iron",
+        "prerequisites": "Forge: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 1800, 
+          "Armor": 20
+        },
+        "recipe": "Iron Scale Mail (III) 15 Iron",
+        "prerequisites": "Forge: Level 5"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
@@ -1533,7 +2047,45 @@
     "description": "Iron greaves to protect your legs.",
     "ID": "ArmorIronLegs",
     "type": "Armor",
-    "recipe": "20 Iron 2 Deer hide",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 1200, 
+          "Armor": 14
+        },
+        "recipe": "20 Iron 2 Deer hide",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 1400, 
+          "Armor": 16
+        },
+        "recipe": "Iron Greaves (I) 5 Iron",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 1600, 
+          "Armor": 18
+        },
+        "recipe": "Iron Greaves (II) 10 Iron",
+        "prerequisites": "Forge: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 1800, 
+          "Armor": 20
+        },
+        "recipe": "Iron Greaves (III) 15 Iron",
+        "prerequisites": "Forge: Level 5"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
@@ -1544,18 +2096,98 @@
     "description": "An elaborate and finely-crafted helm.",
     "ID": "HelmetDrake",
     "type": "Armor",
-    "recipe": "20 Silver 2 Wolf pelt 2 Drake trophy",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 1000, 
+          "Armor": 20
+        },
+        "recipe": "20 Silver 2 Wolf pelt 2 Drake trophy",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 1200, 
+          "Armor": 22
+        },
+        "recipe": "Drake Helmet (I) 5 Silver",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 1400, 
+          "Armor": 24
+        },
+        "recipe": "Drake Helmet (II) 10 Silver",
+        "prerequisites": "Forge: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 1600, 
+          "Armor": 26
+        },
+        "recipe": "Drake Helmet (III) 15 Silver",
+        "prerequisites": "Forge: Level 5"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
   {
     "name": "Wolf Armor Chest",
-    "notes": "",
+    "notes": "Provides protection from cold, freezing, and front damage in the Mountain Biome. Cold protectioin does not stack. This passive is diabled when wet.",
     "location": "",
     "description": "A wolfskin jerkin, warm and wild-looking. It protects against the cold.",
     "ID": "ArmorWolfChest",
     "type": "Armor",
-    "recipe": "20 Silver 5 Wolf pelt 1 Chain",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 1000, 
+          "Armor": 20,
+          "Movement Speed": "-5%"
+        },
+        "recipe": "20 Silver 5 Wolf pelt 1 Chain",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 1200, 
+          "Armor": 22,
+          "Movement Speed": "-5%"
+        },
+        "recipe": "Wolf Armor Chest (I) 5 Silver 2 Wolf pelt",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 1400, 
+          "Armor": 24,
+          "Movement Speed": "-5%"
+        },
+        "recipe": "Wolf Armor Chest (II) 10 Silver 4 Wolf pelt",
+        "prerequisites": "Forge: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 1600, 
+          "Armor": 26,
+          "Movement Speed": "-5%"
+        },
+        "recipe": "Wolf Armor Chest (III) 15 Silver 6 Wolf pelt",
+        "prerequisites": "Forge: Level 5"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
@@ -1566,18 +2198,98 @@
     "description": "Shaggy breeches of wolfskin.",
     "ID": "ArmorWolfLegs",
     "type": "Armor",
-    "recipe": "20 Silver 5 Wolf pelt 4 Wolf fang",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 1000, 
+          "Armor": 20,
+          "Movement Speed": "-5%"
+        },
+        "recipe": "20 Silver 5 Wolf pelt 4 Wolf fang",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 1200, 
+          "Armor": 22,
+          "Movement Speed": "-5%"
+        },
+        "recipe": "Wolf Armor Legs (I) 5 Silver 2 Wolf pelt 1 Wolf fang",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 1400, 
+          "Armor": 24,
+          "Movement Speed": "-5%"
+        },
+        "recipe": "Wolf Armor Legs (II) 10 Silver 4 Wolf pelt 2 Wolf fang",
+        "prerequisites": "Forge: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 1600, 
+          "Armor": 26,
+          "Movement Speed": "-5%"
+        },
+        "recipe": "Wolf Armor Legs (III) 15 Silver 6 Wolf pelt 3 Wolf fang",
+        "prerequisites": "Forge: Level 5"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
   {
     "name": "Wolf Fur Cape",
-    "notes": "",
+    "notes": "Provides protection from cold, freezing, and front damage in the Mountain Biome. Cold protectioin does not stack. This passive is diabled when wet.",
     "location": "",
     "description": "Wolves are natural survivors. This one was just unlucky. Now its pelt will warm you in the snow.",
     "ID": "CapeWolf",
     "type": "Armor",
-    "recipe": "6 Wolf pelt 4 Silver 1 Wolf trophy",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 1000, 
+          "Armor": 1
+        },
+        "recipe": "6 Wolf pelt 4 Silver 1 Wolf trophy",
+        "prerequisites": "Workbench: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 1200, 
+          "Armor": 2
+        },
+        "recipe": "Wolf Fur Cape (I) 4 Wolf pelt 2 Silver",
+        "prerequisites": "Workbench: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 1400, 
+          "Armor": 3
+        },
+        "recipe": "Wolf Fur Cape (II) 8 Wolf pelt 4 Silver",
+        "prerequisites": "Workbench: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 1600, 
+          "Armor": 4
+        },
+        "recipe": "Wolf Fur Cape (III) 12 Wolf pelt 6 Silver",
+        "prerequisites": "Workbench: Level 5"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
@@ -1588,7 +2300,45 @@
     "description": "A snug fit, finely made.",
     "ID": "HelmetPadded",
     "type": "Armor",
-    "recipe": "10 Iron 15 Linen thread",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 1000, 
+          "Armor": 26
+        },
+        "recipe": "10 Iron 15 Linen thread",
+        "prerequisites": "Forge: Level 1"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 1200, 
+          "Armor": 28
+        },
+        "recipe": "Padded Helmet (I) 5 Iron",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 1400, 
+          "Armor": 30
+        },
+        "recipe": "Padded Helmet (II) 10 Iron",
+        "prerequisites": "Forge: Level 3"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 1600, 
+          "Armor": 32
+        },
+        "recipe": "Padded Helmet (III) 15 Iron",
+        "prerequisites": "Forge: Level 4"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
@@ -1599,7 +2349,49 @@
     "description": "Finely wrought and strong enough to turn even the sharpest blades.",
     "ID": "ArmorPaddedCuirass",
     "type": "Armor",
-    "recipe": "10 Iron 20 Linen thread",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 1000, 
+          "Armor": 26,
+          "Movement Speed": "-5%"
+        },
+        "recipe": "10 Iron 20 Linen thread",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 1200, 
+          "Armor": 28,
+          "Movement Speed": "-5%"
+        },
+        "recipe": "Padded Cuirass (I) 3 Iron",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 1400, 
+          "Armor": 30,
+          "Movement Speed": "-5%"
+        },
+        "recipe": "Padded Cuirass (II) 6 Iron",
+        "prerequisites": "Forge: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 1600, 
+          "Armor": 32,
+          "Movement Speed": "-5%"
+        },
+        "recipe": "Padded Cuirass (III) 9 Iron",
+        "prerequisites": "Forge: Level 5"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
@@ -1610,7 +2402,49 @@
     "description": "Expertly crafted leg protection.",
     "ID": "ArmorPaddedGreaves",
     "type": "Armor",
-    "recipe": "10 Iron 20 Linen thread",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 1000, 
+          "Armor": 26,
+          "Movement Speed": "-5%"
+        },
+        "recipe": "10 Iron 20 Linen thread",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 1200, 
+          "Armor": 28,
+          "Movement Speed": "-5%"
+        },
+        "recipe": "Padded Greaves (I) 3 Iron",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 1400, 
+          "Armor": 30,
+          "Movement Speed": "-5%"
+        },
+        "recipe": "Padded Greaves (II) 6 Iron",
+        "prerequisites": "Forge: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 1600, 
+          "Armor": 32,
+          "Movement Speed": "-5%"
+        },
+        "recipe": "Padded Greaves (III) 9 Iron",
+        "prerequisites": "Forge: Level 5"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
@@ -1621,18 +2455,94 @@
     "description": "A simple traveler's cape.",
     "ID": "CapeLinen",
     "type": "Armor",
-    "recipe": "20 Linen thread 1 Silver",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 1500, 
+          "Armor": 1
+        },
+        "recipe": "20 Linen thread 1 Silver",
+        "prerequisites": "Workbench: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 1550, 
+          "Armor": 2
+        },
+        "recipe": "Linen Cape (I) 4 Linen thread",
+        "prerequisites": "Workbench: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 1600, 
+          "Armor": 3
+        },
+        "recipe": "Linen Cape (II) 8 Linen thread",
+        "prerequisites": "Workbench: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 1650, 
+          "Armor": 4
+        },
+        "recipe": "Linen Cape (III) 12 Linen thread",
+        "prerequisites": "Workbench: Level 5"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
   {
     "name": "Lox Cape",
-    "notes": "",
+    "notes":  "Provides protection from cold, freezing, and front damage in the Mountain Biome. Cold protectioin does not stack. This passive is diabled when wet.",
     "location": "",
     "description": "A pelt from one of the great beasts, thick and warm.",
     "ID": "CapeLox",
     "type": "Armor",
-    "recipe": "6 Lox pelt 2 Silver",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Durability": 1200, 
+          "Armor": 1
+        },
+        "recipe": "6 Lox pelt 2 Silver",
+        "prerequisites": "Workbench: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Durability": 1250, 
+          "Armor": 2
+        },
+        "recipe": "Lox Cape (I) 2 Lox pelt",
+        "prerequisites": "Workbench: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Durability": 1300, 
+          "Armor": 3
+        },
+        "recipe": "Lox Cape (II) 4 Lox pelt",
+        "prerequisites": "Workbench: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Durability": 1350, 
+          "Armor": 4
+        },
+        "recipe": "Lox Cape (III) 6 Lox pelt",
+        "prerequisites": "Workbench: Level 5"
+      }
+    ],
     "prerequisites": "",
     "subtype": ""
   },
@@ -1643,6 +2553,10 @@
     "description": "Odin's finest warriors deserve the finest cloth.",
     "ID": "CapeOdin",
     "type": "Armor",
+    "stats": {
+      "Durability": 1500, 
+      "Armor": 1
+    },
     "recipe": "10 Leather scraps 4 Coal",
     "prerequisites": "",
     "subtype": ""
@@ -1654,6 +2568,10 @@
     "description": "Odin's finest warriors deserve the finest cloth.",
     "ID": "HelmetOdin",
     "type": "Armor",
+    "stats": {
+      "Durability": 300, 
+      "Armor": 1
+    },
     "recipe": "10 Leather scraps 4 Coal",
     "prerequisites": "",
     "subtype": ""
@@ -1666,6 +2584,9 @@
     "ID": "HelmetDverger",
     "type": "Armor",
     "recipe": "",
+    "stats": {
+      "Armor": 2
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -1677,6 +2598,9 @@
     "ID": "HelmetYule",
     "type": "Armor",
     "recipe": "",
+    "stats": {
+      "Armor": 1
+    },
     "prerequisites": "",
     "subtype": ""
   },

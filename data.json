@@ -4251,7 +4251,7 @@
           "Pierce Damage": 45,          
           "Durability": 150
         },
-        "recipe": "Crude Bow (I) 5 Fine wood 5 Core wood 2 Deer hide",
+        "recipe": "Huntsman Bow (I) 5 Fine wood 5 Core wood 2 Deer hide",
         "prerequisites": "Workbench: Level 2"
       },
       {
@@ -4260,7 +4260,7 @@
           "Pierce Damage": 48,        
           "Durability": 200
         },
-        "recipe": "Crude Bow (II) 10 Fine wood 10 Core wood 4 Deer hide",
+        "recipe": "Huntsman Bow (II) 10 Fine wood 10 Core wood 4 Deer hide",
         "prerequisites": "Workbench: Level 3"
       },      
       {
@@ -4269,7 +4269,7 @@
           "Pierce Damage": 51,
           "Durability": 250
         },
-        "recipe": "Crude Bow (III) 15 Fine wood 15 Core wood 6 Deer hide",
+        "recipe": "Huntsman Bow (III) 15 Fine wood 15 Core wood 6 Deer hide",
         "prerequisites": "Workbench: Level 4"
       }
     ],

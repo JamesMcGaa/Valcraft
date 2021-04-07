@@ -27,7 +27,7 @@ function renderRecipe(data, subsections, navigation) {
           <ListItem
             key={reqData.name}
             bottomDivider={index !== data.recipe.length - 1}
-            onPress={() => navigation.dispatch(StackActions.push('ObjectPage', { name: reqData.name }))}
+            onPress={() => navigation.navigate('ObjectPage', { name: reqData.name })}
           >
             <View>
               <Avatar source={reqData.image} />

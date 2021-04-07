@@ -61,15 +61,6 @@ function Root() {
   );
 }
 
-function SearchStack() {
-  return (
-    <Stack.Navigator headerMode="none">
-      <Drawer.Screen name="SearchPage" component={SearchPage} />
-      <Drawer.Screen name="ObjectPage" component={ObjectPage} />
-    </Stack.Navigator>
-  );
-}
-
 const Tab = createBottomTabNavigator();
 function RequirementsTabRoot() {
   return (
@@ -131,11 +122,9 @@ function MyDrawer() {
       })}
     >
       <Drawer.Screen name="About" component={HomePage} />
-      <Drawer.Screen name="All Items" component={SearchStack} />
+      <Drawer.Screen name="All Items" component={SearchPage} />
       <Drawer.Screen name="Tracked Items" component={RequirementsTabRoot} />
       <Drawer.Screen name="ObjectPage" component={ObjectPage} />
-      <Drawer.Screen name="RequirementsPage" component={RequirementsPage} />
-      <Drawer.Screen name="MaterialsPage" component={MaterialsPage} />
     </Drawer.Navigator>
   );
 }

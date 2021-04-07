@@ -92,7 +92,9 @@ function renderStats(data, subsections) {
       {Object.keys(data.stats).map((key) => (
         <Text key={key}>
           {`${key}: `}
-          {data.stats[key]}
+          <Text style={{ color: '#33B8FF' }}>
+            {data.stats[key]}
+          </Text>
         </Text>
       ))}
 

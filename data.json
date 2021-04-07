@@ -2611,7 +2611,61 @@
     "description": "A crude but useful weapon.",
     "ID": "Club",
     "type": "Weapon",
-    "recipe": "6 Wood",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Damage": 12,
+          "Parry": 20,
+          "Durability": 100
+        },
+        "recipe": "6 Wood",
+        "prerequisites": "Workbench: Level 1"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Damage": 18,
+          "Parry": 25,
+          "Durability": 150
+        },
+        "recipe": "Club (I) 5 Bone fragments",
+        "prerequisites": "Workbench: Level 2"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Damage": 24,
+          "Parry": 30,
+          "Durability": 200
+        },
+        "recipe": "Club (II) 10 Bone fragments",
+        "prerequisites": "Workbench: Level 3"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Damage": 30,
+          "Parry": 35,
+          "Durability": 250
+        },
+        "recipe": "Club (III) 15 Bone fragments",
+        "prerequisites": "Workbench: Level 4"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Blunt",
+      "Wield": "One-Handed",
+      "Backstab Multiplier": "3x",
+      "Parry Multiplier": "2x",
+      "Weight": 2,
+      "Block": 10,
+      "Knockback": 25,
+      "Repair Level": 1,
+      "Movement Speed": "-5%"
+
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2622,7 +2676,61 @@
     "description": "A headache on a stick.",
     "ID": "MaceBronze",
     "type": "Weapon",
-    "recipe": "4 Wood 8 Bronze 3 Leather scraps",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Damage": 35,
+          "Parry": 30,
+          "Durability": 200
+        },
+        "recipe": "4 Wood 8 Bronze 3 Leather scraps",
+        "prerequisites": "Forge: Level 1"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Damage": 41,
+          "Parry": 35,
+          "Durability": 250
+        },
+        "recipe": "Bronze Mace (I) 4 Bronze",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Damage": 47,
+          "Parry": 40,
+          "Durability": 300
+        },
+        "recipe": "Bronze Mace (II) 8 Bronze",
+        "prerequisites": "Forge: Level 3"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Damage": 53,
+          "Parry": 45,
+          "Durability": 350
+        },
+        "recipe": "Bronze Mace (III) 12 Bronze",
+        "prerequisites": "Forge: Level 4"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Blunt",
+      "Wield": "One-Handed",
+      "Backstab Multiplier": "3x",
+      "Parry Multiplier": "2x",
+      "Weight": 2,
+      "Block": 10,
+      "Knockback": 80,
+      "Repair Level": 1,
+      "Movement Speed": "-5%"
+
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2633,7 +2741,61 @@
     "description": "A fist-sized lump of iron on a wooden shaft.",
     "ID": "MaceIron",
     "type": "Weapon",
-    "recipe": "4 Wood 20 Iron 3 Leather scraps",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Damage": 55,
+          "Parry": 30,
+          "Durability": 200
+        },
+        "recipe": "4 Wood 20 Iron 3 Leather scraps",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Damage": 61,
+          "Parry": 35,
+          "Durability": 250
+        },
+        "recipe": "Iron Mace (I) 10 Iron",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Damage": 67,
+          "Parry": 40,
+          "Durability": 300
+        },
+        "recipe": "Iron Mace (II) 20 Iron",
+        "prerequisites": "Forge: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Damage": 73,
+          "Parry": 45,
+          "Durability": 350
+        },
+        "recipe": "Iron Mace (III) 30 Iron",
+        "prerequisites": "Forge: Level 5"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Blunt",
+      "Wield": "One-Handed",
+      "Backstab Multiplier": "3x",
+      "Parry Multiplier": "2x",
+      "Weight": 2,
+      "Block": 10,
+      "Knockback": 90,
+      "Repair Level": 2,
+      "Movement Speed": "-5%"
+
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2644,8 +2806,61 @@
     "description": "A deadly weapon, bristling with fiendish spikes.",
     "ID": "MaceNeedle",
     "type": "Weapon",
-    "recipe": "5 Fine wood 20 Iron 5 Needle 10 Linen thread",
-    "prerequisites": "",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Pierce Damage": 45,
+          "Parry": 30,
+          "Durability": 150
+        },
+        "recipe": "5 Fine wood 20 Iron 5 Needle 10 Linen thread",
+        "prerequisites": "Forge: Level 4"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Pierce Damage": 51,
+          "Parry": 35,
+          "Durability": 200
+        },
+        "recipe": "Porcupine (I) 2 Iron 2 Needle",
+        "prerequisites": "Forge: Level 5"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Pierce Damage": 57,
+          "Parry": 40,
+          "Durability": 250
+        },
+        "recipe": "Porcupine (II) 4 Iron 4 Needle",
+        "prerequisites": "Forge: Level 6"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Pierce Damage": 63,
+          "Parry": 45,
+          "Durability": 300
+        },
+        "recipe": "Porcupine (III) 6 Iron 6 Needle",
+        "prerequisites": "Forge: Level 7"
+      }
+    ],
+    "stats": {
+      "Blunt Damage": 50,
+      "Damage Type": "Hybrid",
+      "Wield": "One-Handed",
+      "Backstab Multiplier": "3x",
+      "Parry Multiplier": "2x",
+      "Weight": 2,
+      "Block": 20,
+      "Knockback": 90,
+      "Repair Level": 4,
+      "Movement Speed": "-5%"
+    },
     "subtype": ""
   },
   {
@@ -2655,7 +2870,62 @@
     "description": "The dead fear silver. Remind them why.",
     "ID": "MaceSilver",
     "type": "Weapon",
-    "recipe": "10 Ancient bark 30 Silver 5 Ymir flesh 5 Freeze gland",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Frost Damage": 40,
+          "Parry": 30,
+          "Durability": 200
+        },
+        "recipe": "10 Ancient bark 30 Silver 5 Ymir flesh 5 Freeze gland",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Frost Damage": 46,
+          "Parry": 35,
+          "Durability": 250
+        },
+        "recipe": "Frostner (I) 15 Silver",
+        "prerequisites": "Forge: Level 4"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Frost Damage": 52,
+          "Parry": 40,
+          "Durability": 300
+        },
+        "recipe": "Frostner (II) 30 Silver",
+        "prerequisites": "Forge: Level 5"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Frost Damage": 58,
+          "Parry": 45,
+          "Durability": 350
+        },
+        "recipe": "Frostner (III) 45 Silver",
+        "prerequisites": "Forge: Level 6"
+      }
+    ],
+    "stats": {
+      "Blunt Damage": 35,
+      "Spirit Damage": 20,
+      "Damage Type": "Hybrid",
+      "Wield": "One-Handed",
+      "Backstab Multiplier": "3x",
+      "Parry Multiplier": "2x",
+      "Weight": 2,
+      "Block": 10,
+      "Knockback": 120,
+      "Repair Level": 3,
+      "Movement Speed": "-5%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2666,7 +2936,61 @@
     "description": "A weapon worthy of the gods! If you get hit with this, you'll know it...",
     "ID": "SledgeStagbreaker",
     "type": "Weapon",
-    "recipe": "20 Core wood 5 Deer trophy 2 Leather scraps",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Blunt Damage": 20,
+          "Parry": 50,
+          "Durability": 100
+        },
+        "recipe": "20 Core wood 5 Deer trophy 2 Leather scraps",
+        "prerequisites": "Workbench: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Blunt Damage": 26,
+          "Parry": 60,
+          "Durability": 150
+        },
+        "recipe": "Stagbreaker (I) 5 Core wood 2 Deer trophy 1 Leather scraps 10 Bone fragments",
+        "prerequisites": "Workbench: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Blunt Damage": 32,
+          "Parry": 70,
+          "Durability": 200
+        },
+        "recipe": "Stagbreaker (II) 10 Core wood 4 Deer trophy 2 Leather scraps 20 Bone fragments",
+        "prerequisites": "Workbench: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Blunt Damage": 38,
+          "Parry": 80,
+          "Durability": 250
+        },
+        "recipe": "Stagbreaker (III) 15 Core wood 6 Deer trophy 3 Leather scraps 30 Bone fragments",
+        "prerequisites": "Workbench: Level 5"
+      }
+    ],
+    "stats": {
+      "Pierce Damage": 5,
+      "Damage Type": "Hybrid",
+      "Wield": "Two-Handed",
+      "Backstab Multiplier": "2x",
+      "Parry Multiplier": "2x",
+      "Weight": 4,
+      "Block": 15,
+      "Knockback": 150,
+      "Repair Level": 2,
+      "Movement Speed": "-20%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2677,7 +3001,60 @@
     "description": "A mighty hammer , worthy of a champion.",
     "ID": "SledgeIron",
     "type": "Weapon",
-    "recipe": "10 Ancient bark 30 Iron 4 Ymir flesh 1 Draugr Elite trophy",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Blunt Damage": 55,
+          "Parry": 50,
+          "Durability": 100
+        },
+        "recipe": "10 Ancient bark 30 Iron 4 Ymir flesh 1 Draugr Elite trophy",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Blunt Damage": 61,
+          "Parry": 60,
+          "Durability": 150
+        },
+        "recipe": "Iron Sledge (I) 2 Ancient bark 15 Iron 2 Ymir flesh",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Blunt Damage": 67,
+          "Parry": 70,
+          "Durability": 200
+        },
+        "recipe": "Iron Sledge (II) 4 Ancient bark 30 Iron 4 Ymir flesh",
+        "prerequisites": "Forge: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Blunt Damage": 73,
+          "Parry": 80,
+          "Durability": 250
+        },
+        "recipe": "Iron Sledge (III) 6 Ancient bark 45 Iron 6 Ymir flesh",
+        "prerequisites": "Forge: Level 5"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Blunt",
+      "Wield": "Two-Handed",
+      "Backstab Multiplier": "2x",
+      "Parry Multiplier": "2x",
+      "Weight": 4,
+      "Block": 15,
+      "Knockback": 200,
+      "Repair Level": 2,
+      "Movement Speed": "-20%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2688,7 +3065,60 @@
     "description": "Skull-splitter, a warrior's joy.",
     "ID": "Battleaxe",
     "type": "Weapon",
-    "recipe": "30 Ancient bark 35 Iron 4 Leather scraps",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Slash Damage": 75,
+          "Parry": 70,
+          "Durability": 200
+        },
+        "recipe": "30 Ancient bark 35 Iron 4 Leather scraps",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Slash Damage": 81,
+          "Parry": 75,
+          "Durability": 250
+        },
+        "recipe": "Battleaxe (I) 5 Ancient bark 15 Iron",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Slash Damage": 87,
+          "Parry": 80,
+          "Durability": 300
+        },
+        "recipe": "Battleaxe (II) 10 Ancient bark 30 Iron",
+        "prerequisites": "Forge: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Slash Damage": 93,
+          "Parry": 85,
+          "Durability": 350
+        },
+        "recipe": "Battleaxe (III) 15 Ancient bark 45 Iron",
+        "prerequisites": "Forge: Level 5"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Slash",
+      "Wield": "Two-Handed",
+      "Backstab Multiplier": "3x",
+      "Parry Multiplier": "2x",
+      "Weight": 2.5,
+      "Block": 20,
+      "Knockback": 70,
+      "Repair Level": 2,
+      "Movement Speed": "-20%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2699,7 +3129,63 @@
     "description": "Sharpened flint, a reliable tool.",
     "ID": "KnifeFlint",
     "type": "Weapon",
-    "recipe": "2 Wood 4 Flint 2 Leather scraps",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Slash Damage": 6,
+          "Pierce Damage": 6,
+          "Parry": 10,
+          "Durability": 100
+        },
+        "recipe": "2 Wood 4 Flint 2 Leather scraps",
+        "prerequisites": "Workbench: Level 1"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Slash Damage": 7,          
+          "Pierce Damage": 7,
+          "Parry": 15,
+          "Durability": 150
+        },
+        "recipe": "Flint Knife (I) 2 Flint",
+        "prerequisites": "Workbench: Level 2"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Slash Damage": 8,        
+          "Pierce Damage": 8,
+          "Parry": 20,
+          "Durability": 200
+        },
+        "recipe": "Flint Knife (II) 4 Flint",
+        "prerequisites": "Workbench: Level 3"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Slash Damage": 9,
+          "Pierce Damage": 9,
+          "Parry": 25,
+          "Durability": 250
+        },
+        "recipe": "Flint Knife (III) 6 Flint",
+        "prerequisites": "Workbench: Level 4"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Hybrid",
+      "Wield": "One-Handed",
+      "Backstab Multiplier": "10x",
+      "Parry Multiplier": "4x",
+      "Weight": 0.3,
+      "Block": 5,
+      "Knockback": 10,
+      "Repair Level": 1
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2710,7 +3196,63 @@
     "description": "A glittering copper knife .",
     "ID": "KnifeCopper",
     "type": "Weapon",
-    "recipe": "3 Wood 8 Copper",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Slash Damage": 9,
+          "Pierce Damage": 9,
+          "Parry": 10,
+          "Durability": 100
+        },
+        "recipe": "2 Wood 8 Copper",
+        "prerequisites": "Forge: Level 1"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Slash Damage": 10,          
+          "Pierce Damage": 10,
+          "Parry": 15,
+          "Durability": 150
+        },
+        "recipe": "Copper Knife (I) 4 Copper 8 Greydwarf eye",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Slash Damage": 11,        
+          "Pierce Damage": 11,
+          "Parry": 20,
+          "Durability": 200
+        },
+        "recipe": "Copper Knife (II) 8 Copper 16 Greydwarf eye",
+        "prerequisites": "Forge: Level 3"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Slash Damage": 12,
+          "Pierce Damage": 12,
+          "Parry": 25,
+          "Durability": 250
+        },
+        "recipe": "Copper Knife (III) 12 Copper 24 Greydwarf eye",
+        "prerequisites": "Forge: Level 4"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Hybrid",
+      "Wield": "One-Handed",
+      "Backstab Multiplier": "10x",
+      "Parry Multiplier": "4x",
+      "Weight": 0.3,
+      "Block": 8,
+      "Knockback": 10,
+      "Repair Level": 1
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2721,7 +3263,63 @@
     "description": "A knife from the deep.",
     "ID": "KnifeChitin",
     "type": "Weapon",
-    "recipe": "4 Fine wood 20 Chitin 2 Leather scraps",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Slash Damage": 12,
+          "Pierce Damage": 12,
+          "Parry": 10,
+          "Durability": 100
+        },
+        "recipe": "4 Fine wood 20 Chitin 2 Leather scraps",
+        "prerequisites": "Workbench: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Slash Damage": 13,          
+          "Pierce Damage": 13,
+          "Parry": 15,
+          "Durability": 150
+        },
+        "recipe": "Abyssal Razor (I) 10 Chitin",
+        "prerequisites": "Workbench: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Slash Damage": 14,        
+          "Pierce Damage": 14,
+          "Parry": 20,
+          "Durability": 200
+        },
+        "recipe": "Abyssal Razor (II) 20 Chitin",
+        "prerequisites": "Workbench: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Slash Damage": 15,
+          "Pierce Damage": 15,
+          "Parry": 25,
+          "Durability": 250
+        },
+        "recipe": "Abyssal Razor (III) 30 Chitin",
+        "prerequisites": "Workbench: Level 5"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Hybrid",
+      "Wield": "One-Handed",
+      "Backstab Multiplier": "10x",
+      "Parry Multiplier": "4x",
+      "Weight": 0.3,
+      "Block": 10,
+      "Knockback": 10,
+      "Repair Level": 2
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2732,7 +3330,63 @@
     "description": "A darkling blade, strong and sharp.",
     "ID": "KnifeBlackMetal",
     "type": "Weapon",
-    "recipe": "4 Fine wood 20 Black metal 5 Linen thread",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Slash Damage": 18,
+          "Pierce Damage": 18,
+          "Parry": 10,
+          "Durability": 100
+        },
+        "recipe": "4 Fine wood 10 Black metal 5 Linen thread",
+        "prerequisites": "Forge: Level 4"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Slash Damage": 19,          
+          "Pierce Damage": 19,
+          "Parry": 15,
+          "Durability": 150
+        },
+        "recipe": "Blackmetal Knife (I) 4 Black metal 5 Linen thread",
+        "prerequisites": "Forge: Level 5"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Slash Damage": 20,        
+          "Pierce Damage": 20,
+          "Parry": 20,
+          "Durability": 200
+        },
+        "recipe": "Blackmetal Knife (II) 8 Black metal 10 Linen thread",
+        "prerequisites": "Forge: Level 6"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Slash Damage": 21,
+          "Pierce Damage": 21,
+          "Parry": 25,
+          "Durability": 250
+        },
+        "recipe": "Blackmetal Knife (III) 12 Black metal 15 Linen thread",
+        "prerequisites": "Forge: Level 7"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Hybrid",
+      "Wield": "One-Handed",
+      "Backstab Multiplier": "10x",
+      "Parry Multiplier": "4x",
+      "Weight": 0.3,
+      "Block": 10,
+      "Knockback": 10,
+      "Repair Level": 4
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2743,7 +3397,60 @@
     "description": "Blood-drinker, a thirsty friend.",
     "ID": "SwordBronze",
     "type": "Weapon",
-    "recipe": "2 Wood 8 Bronze 2 Leather scraps",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Slash Damage": 35,
+          "Parry": 20,
+          "Durability": 200
+        },
+        "recipe": "2 Wood 8 Bronze 2 Leather scraps",
+        "prerequisites": "Forge: Level 1"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Slash Damage": 41,          
+          "Parry": 25,
+          "Durability": 250
+        },
+        "recipe": "Bronze Sword (I) 1 Wood 4 Bronze 1 Leather scraps",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Slash Damage": 47,        
+          "Parry": 30,
+          "Durability": 300
+        },
+        "recipe": "Bronze Sword (II) 2 Wood 8 Bronze 2 Leather scraps",
+        "prerequisites": "Forge: Level 3"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Slash Damage": 53,
+          "Parry": 35,
+          "Durability": 350
+        },
+        "recipe": "Bronze Sword (III) 3 Wood 12 Bronze 3 Leather scraps",
+        "prerequisites": "Forge: Level 4"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Slash",
+      "Wield": "One-Handed",
+      "Backstab Multiplier": "3x",
+      "Parry Multiplier": "2x",
+      "Weight": 0.8,
+      "Block": 10,
+      "Knockback": 40,
+      "Repair Level": 1,
+      "Movement Speed": "-5%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2754,7 +3461,60 @@
     "description": "The straight line between life and death runs along the edge of this blade.",
     "ID": "SwordIron",
     "type": "Weapon",
-    "recipe": "2 Wood 20 Iron 3 Leather scraps",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Slash Damage": 55,
+          "Parry": 20,
+          "Durability": 200
+        },
+        "recipe": "2 Wood 20 Iron 3 Leather scraps",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Slash Damage": 61,          
+          "Parry": 25,
+          "Durability": 250
+        },
+        "recipe": "Iron Sword (I) 1 Wood 10 Iron 2 Leather scraps",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Slash Damage": 67,        
+          "Parry": 30,
+          "Durability": 300
+        },
+        "recipe": "Iron Sword (II) 2 Wood 20 Iron 4 Leather scraps",
+        "prerequisites": "Forge: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Slash Damage": 73,
+          "Parry": 35,
+          "Durability": 350
+        },
+        "recipe": "Iron Sword (III) 3 Wood 30 Iron 6 Leather scraps",
+        "prerequisites": "Forge: Level 5"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Slash",
+      "Wield": "One-Handed",
+      "Backstab Multiplier": "3x",
+      "Parry Multiplier": "2x",
+      "Weight": 0.8,
+      "Block": 10,
+      "Knockback": 50,
+      "Repair Level": 2,
+      "Movement Speed": "-5%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2765,7 +3525,64 @@
     "description": "Purest of metals, nothing unclean can abide its touch.",
     "ID": "SwordSilver",
     "type": "Weapon",
-    "recipe": "2 Wood 40 Silver 3 Leather scraps 5 Iron",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Slash Damage": 75,
+          "Spirit Damage": 30, 
+          "Parry": 20,
+          "Durability": 200
+        },
+        "recipe": "2 Wood 40 Silver 3 Leather scraps 5 Iron",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Slash Damage": 81,     
+          "Spirit Damage": 35,      
+          "Parry": 25,
+          "Durability": 250
+        },
+        "recipe": "Silver Sword (I) 1 Wood 20 Silver 1 Leather scraps 3 Iron",
+        "prerequisites": "Forge: Level 4"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Slash Damage": 87,        
+          "Spirit Damage": 40, 
+          "Parry": 30,
+          "Durability": 300
+        },
+        "recipe": "Silver Sword (II) 2 Wood 40 Silver 2 Leather scraps 6 Iron",
+        "prerequisites": "Forge: Level 5"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Slash Damage": 93,
+          "Spirit Damage": 45, 
+          "Parry": 35,
+          "Durability": 350
+        },
+        "recipe": "Silver Sword (III) 3 Wood 60 Silver 3 Leather scraps 9 Iron",
+        "prerequisites": "Forge: Level 6"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Hybrid",
+      "Wield": "One-Handed",
+      "Backstab Multiplier": "3x",
+      "Parry Multiplier": "2x",
+      "Weight": 1.0,
+      "Block": 10,
+      "Knockback": 40,
+      "Repair Level": 3,
+      "Movement Speed": "-5%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2776,7 +3593,60 @@
     "description": "A thing of death and beauty, it catches the light with a greenish glow.",
     "ID": "SwordBlackmetal",
     "type": "Weapon",
-    "recipe": "2 Fine wood 20 Black metal 5 Linen thread",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Slash Damage": 95,
+          "Parry": 20,
+          "Durability": 200
+        },
+        "recipe": "2 Fine wood 20 Black metal 5 Linen thread",
+        "prerequisites": "Forge: Level 4"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Slash Damage": 101,          
+          "Parry": 25,
+          "Durability": 250
+        },
+        "recipe": "Blackmetal Sword (I) 10 Black metal 5 Linen thread",
+        "prerequisites": "Forge: Level 5"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Slash Damage": 107,        
+          "Parry": 30,
+          "Durability": 300
+        },
+        "recipe": "Blackmetal Sword (II) 20 Black metal 10 Linen thread",
+        "prerequisites": "Forge: Level 6"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Slash Damage": 113,
+          "Parry": 35,
+          "Durability": 350
+        },
+        "recipe": "Blackmetal Sword (III) 30 Black metal 15 Linen thread",
+        "prerequisites": "Forge: Level 7"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Slash",
+      "Wield": "One-Handed",
+      "Backstab Multiplier": "3x",
+      "Parry Multiplier": "2x",
+      "Weight": 0.8,
+      "Block": 10,
+      "Knockback": 40,
+      "Repair Level": 4,
+      "Movement Speed": "-5%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2787,7 +3657,60 @@
     "description": "A true warrior's tool.",
     "ID": "AtgeirBronze",
     "type": "Weapon",
-    "recipe": "10 Wood 8 Bronze 2 Leather scraps",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Pierce Damage": 45,
+          "Parry": 40,
+          "Durability": 125
+        },
+        "recipe": "10 Wood 8 Bronze 2 Leather Scraps",
+        "prerequisites": "Forge: Level 1"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Pierce Damage": 51,          
+          "Parry": 45,
+          "Durability": 175
+        },
+        "recipe": "Bronze Atgeir (I) 4 Bronze",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Pierce Damage": 57,        
+          "Parry": 50,
+          "Durability": 225
+        },
+        "recipe": "Bronze Atgeir (II) 8 Bronze",
+        "prerequisites": "Forge: Level 3"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Pierce Damage": 63,
+          "Parry": 55,
+          "Durability": 275
+        },
+        "recipe": "Bronze Atgeir (III) 12 Bronze",
+        "prerequisites": "Forge: Level 4"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Pierce",
+      "Wield": "Two-Handed",
+      "Backstab Multiplier": "3x",
+      "Parry Multiplier": "2x",
+      "Weight": 2.5,
+      "Block": 10,
+      "Knockback": 30,
+      "Repair Level": 1,
+      "Movement Speed": "-10%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2798,7 +3721,60 @@
     "description": "Blood-drinker, skull-cracker, death-bringer.",
     "ID": "AtgeirIron",
     "type": "Weapon",
-    "recipe": "10 Wood 30 Iron 2 Leather scraps",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Pierce Damage": 65,
+          "Parry": 40,
+          "Durability": 175
+        },
+        "recipe": "10 Wood 30 Iron 2 Leather scraps",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Pierce Damage": 71,          
+          "Parry": 45,
+          "Durability": 225
+        },
+        "recipe": "Iron Atgeir (I) 15 Iron 1 Leather scraps",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Pierce Damage": 77,        
+          "Parry": 50,
+          "Durability": 275
+        },
+        "recipe": "Iron Atgeir (II) 30 Iron 2 Leather scraps",
+        "prerequisites": "Forge: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Pierce Damage": 83,
+          "Parry": 55,
+          "Durability": 325
+        },
+        "recipe": "Iron Atgeir (III) 45 Iron 3 Leather scraps",
+        "prerequisites": "Forge: Level 5"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Pierce",
+      "Wield": "Two-Handed",
+      "Backstab Multiplier": "3x",
+      "Parry Multiplier": "2x",
+      "Weight": 2.5,
+      "Block": 10,
+      "Knockback": 30,
+      "Repair Level": 2,
+      "Movement Speed": "-10%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2809,7 +3785,60 @@
     "description": "A vicious hewing-axe of almost unbreakable black metal.",
     "ID": "AtgeirBlackmetal",
     "type": "Weapon",
-    "recipe": "10 Fine wood 30 Black metal 5 Linen thread",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Pierce Damage": 105,
+          "Parry": 40,
+          "Durability": 175
+        },
+        "recipe": "10 Fine wood 30 Black metal 5 Linen thread",
+        "prerequisites": "Forge: Level 4"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Pierce Damage": 111,          
+          "Parry": 45,
+          "Durability": 225
+        },
+        "recipe": "Blackmetal Atgeir (I) 15 Black metal 5 Linen thread",
+        "prerequisites": "Forge: Level 5"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Pierce Damage": 117,        
+          "Parry": 50,
+          "Durability": 275
+        },
+        "recipe": "Blackmetal Atgeir (II) 30 Black metal 10 Linen thread",
+        "prerequisites": "Forge: Level 6"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Pierce Damage": 123,
+          "Parry": 55,
+          "Durability": 325
+        },
+        "recipe": "Blackmetal Atgeir (III) 45 Black metal 15 Linen thread",
+        "prerequisites": "Forge: Level 7"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Pierce",
+      "Wield": "Two-Handed",
+      "Backstab Multiplier": "3x",
+      "Parry Multiplier": "2x",
+      "Weight": 2.5,
+      "Block": 10,
+      "Knockback": 30,
+      "Repair Level": 4,
+      "Movement Speed": "-10%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2820,7 +3849,56 @@
     "description": "If your eye marks a thing for death, let your arm send the messenger.",
     "ID": "SpearFlint",
     "type": "Weapon",
-    "recipe": "5 Wood 10 Flint 2 Leather scraps",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Pierce Damage": 20,
+          "Durability": 100
+        },
+        "recipe": "5 Wood 10 Flint 2 Leather scraps",
+        "prerequisites": "Workbench: Level 1"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Pierce Damage": 26,          
+          "Durability": 150
+        },
+        "recipe": "Flint Spear (I) 3 Wood 5 Flint 1 Leather scraps",
+        "prerequisites": "Workbench: Level 2"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Pierce Damage": 32,        
+          "Durability": 200
+        },
+        "recipe": "Flint Spear (II) 6 Wood 10 Flint 2 Leather scraps",
+        "prerequisites": "Workbench: Level 3"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Pierce Damage": 38,
+          "Durability": 250
+        },
+        "recipe": "Flint Spear (III) 9 Wood 15 Flint 3 Leather scraps",
+        "prerequisites": "Workbench: Level 4"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Pierce",
+      "Wield": "One-Handed",
+      "Backstab Multiplier": "3x",
+      "Parry Multiplier": "2x",
+      "Weight": 1.5,
+      "Block": 10,
+      "Knockback": 20,
+      "Repair Level": 1,
+      "Movement Speed": "-5%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2831,7 +3909,56 @@
     "description": "A sturdy spear with a head of burnished bronze.",
     "ID": "SpearBronze",
     "type": "Weapon",
-    "recipe": "5 Wood 6 Bronze 2 Deer hide",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Pierce Damage": 35,
+          "Durability": 100
+        },
+        "recipe": "5 Wood 6 Bronze 2 Deer hide",
+        "prerequisites": "Forge: Level 1"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Pierce Damage": 41,          
+          "Durability": 150
+        },
+        "recipe": "Bronze Spear (I) 3 Wood 4 Bronze 1 Deer hide",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Pierce Damage": 47,        
+          "Durability": 200
+        },
+        "recipe": "Bronze Spear (II) 6 Wood 8 Bronze 2 Deer hide",
+        "prerequisites": "Forge: Level 3"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Pierce Damage": 53,
+          "Durability": 250
+        },
+        "recipe": "Bronze Spear (III) 9 Wood 12 Bronze 3 Deer hide",
+        "prerequisites": "Forge: Level 4"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Pierce",
+      "Wield": "One-Handed",
+      "Backstab Multiplier": "3x",
+      "Parry Multiplier": "2x",
+      "Weight": 1.5,
+      "Block": 10,
+      "Knockback": 20,
+      "Repair Level": 1,
+      "Movement Speed": "-5%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2842,7 +3969,56 @@
     "description": "Despite its gnarled look, this spear is strong and perfectly balanced.",
     "ID": "SpearElderbark",
     "type": "Weapon",
-    "recipe": "4 Troll hide 10 Iron 10 Ancient bark",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Pierce Damage": 55,
+          "Durability": 100
+        },
+        "recipe": "4 Troll hide 10 Iron 10 Ancient bark",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Pierce Damage": 61,          
+          "Durability": 150
+        },
+        "recipe": "Ancient Bark Spear (I) 1 Troll hide 5 Iron 5 Ancient bark",
+        "prerequisites": "Forge: Level 4"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Pierce Damage": 67,        
+          "Durability": 200
+        },
+        "recipe": "Ancient Bark Spear (II) 2 Troll hide 10 Iron 10 Ancient bark",
+        "prerequisites": "Forge: Level 5"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Pierce Damage": 73,
+          "Durability": 250
+        },
+        "recipe": "Ancient Bark Spear (III) 3 Troll hide 15 Iron 15 Ancient bark",
+        "prerequisites": "Forge: Level 6"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Pierce",
+      "Wield": "One-Handed",
+      "Backstab Multiplier": "3x",
+      "Parry Multiplier": "2x",
+      "Weight": 1.5,
+      "Block": 10,
+      "Knockback": 20,
+      "Repair Level": 3,
+      "Movement Speed": "-5%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2853,17 +4029,80 @@
     "description": "Even in death, the wolf's tooth aches for flesh.",
     "ID": "SpearWolfFang",
     "type": "Weapon",
-    "recipe": "10 Ancient bark 4 Wolf fang 2 Leather scraps 2 Silver",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Pierce Damage": 70,
+          "Durability": 100
+        },
+        "recipe": "10 Ancient bark 4 Wolf fang 2 Leather scraps 2 Silver",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Pierce Damage": 76,          
+          "Durability": 150
+        },
+        "recipe": "Fang Spear (I)  5 Ancient bark 2 Wolf fang 1 Leather scraps 1 Silver",
+        "prerequisites": "Forge: Level 4"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Pierce Damage": 82,        
+          "Durability": 200
+        },
+        "recipe": "Fang Spear (II) 10 Ancient bark 4 Wolf fang 2 Leather scraps 2 Silver",
+        "prerequisites": "Forge: Level 5"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Pierce Damage": 88,
+          "Durability": 250
+        },
+        "recipe": "Fang Spear (III) 15 Ancient bark 6 Wolf fang 3 Leather scraps 3 Silver",
+        "prerequisites": "Forge: Level 6"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Pierce",
+      "Wield": "One-Handed",
+      "Backstab Multiplier": "3x",
+      "Parry Multiplier": "2x",
+      "Weight": 1.5,
+      "Block": 10,
+      "Knockback": 20,
+      "Repair Level": 3,
+      "Movement Speed": "-5%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
   {
     "name": "Abyssal Harpoon",
-    "notes": "",
+    "notes": "Attacks will leash the target to the player. Further attacks will break the leash.",
     "location": "",
     "description": "The ocean's wrath.",
     "ID": "SpearChitin",
     "type": "Weapon",
+    "stats": {
+      "Pierce Damage": 10,
+      "Durability": 50,
+      "Damage Type": "Pierce",
+      "Wield": "One-Handed",
+      "Backstab Multiplier": "1x",
+      "Parry Multiplier": "2x",
+      "Weight": 1.5,
+      "Block": 10,
+      "Knockback": 20,
+      "Repair Level": 2,
+      "prerequisites": "Workbench: Level 2",
+      "Movement Speed": "-5%"
+    },
     "recipe": "8 Fine wood 30 Chitin 3 Leather scraps",
     "prerequisites": "",
     "subtype": ""
@@ -2875,7 +4114,56 @@
     "description": "A crude but functional bow.",
     "ID": "Bow",
     "type": "Weapon",
-    "recipe": "10 Wood 8 Leather scraps",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Pierce Damage": 22,
+          "Durability": 50
+        },
+        "recipe": "10 Wood 8 Leather scraps",
+        "prerequisites": "Workbench: Level 1"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Pierce Damage": 25,          
+          "Durability": 100
+        },
+        "recipe": "Crude Bow (I) 5 Wood 4 Leather scraps 1 Deer hide",
+        "prerequisites": "Workbench: Level 2"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Pierce Damage": 28,        
+          "Durability": 150
+        },
+        "recipe": "Crude Bow (II) 10 Wood 8 Leather scraps 2 Deer hide",
+        "prerequisites": "Workbench: Level 3"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Pierce Damage": 31,
+          "Durability": 200
+        },
+        "recipe": "Crude Bow (III) 15 Wood 12 Leather scraps 3 Deer hide",
+        "prerequisites": "Workbench: Level 4"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Pierce",
+      "Wield": "Two-Handed",
+      "Backstab Multiplier": "3x",
+      "Parry Multiplier": "1.5x",
+      "Weight": 1.5,
+      "Block": 5,
+      "Knockback": 0,
+      "Repair Level": 1,
+      "Movement Speed": "-5%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2886,7 +4174,56 @@
     "description": "A simple bow of strong and supple wood.",
     "ID": "BowFineWood",
     "type": "Weapon",
-    "recipe": "10 Fine wood 10 Core wood 2 Deer hide",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Pierce Damage": 32,
+          "Durability": 100
+        },
+        "recipe": "10 Fine wood 10 Core wood 2 Deer hide",
+        "prerequisites": "Workbench: Level 1"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Pierce Damage": 35,          
+          "Durability": 150
+        },
+        "recipe": "Crude Bow (I) 5 Fine wood 5 Core wood 2 Deer hide",
+        "prerequisites": "Workbench: Level 2"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Pierce Damage": 38,        
+          "Durability": 200
+        },
+        "recipe": "Crude Bow (II) 10 Fine wood 10 Core wood 4 Deer hide",
+        "prerequisites": "Workbench: Level 3"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Pierce Damage": 41,
+          "Durability": 250
+        },
+        "recipe": "Crude Bow (III) 15 Fine wood 15 Core wood 6 Deer hide",
+        "prerequisites": "Workbench: Level 4"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Pierce",
+      "Wield": "Two-Handed",
+      "Backstab Multiplier": "3x",
+      "Parry Multiplier": "1.5x",
+      "Weight": 1.5,
+      "Block": 5,
+      "Knockback": 5,
+      "Repair Level": 1,
+      "Movement Speed": "-5%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2897,7 +4234,56 @@
     "description": "Finely worked and strung, a huntsman's joy.",
     "ID": "BowHuntsman",
     "type": "Weapon",
-    "recipe": "10 Fine wood 20 Iron 10 Feathers 2 Deer hide",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Pierce Damage": 42,
+          "Durability": 100
+        },
+        "recipe": "10 Fine wood 10 Core wood 2 Deer hide",
+        "prerequisites": "Workbench: Level 1"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Pierce Damage": 45,          
+          "Durability": 150
+        },
+        "recipe": "Crude Bow (I) 5 Fine wood 5 Core wood 2 Deer hide",
+        "prerequisites": "Workbench: Level 2"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Pierce Damage": 48,        
+          "Durability": 200
+        },
+        "recipe": "Crude Bow (II) 10 Fine wood 10 Core wood 4 Deer hide",
+        "prerequisites": "Workbench: Level 3"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Pierce Damage": 51,
+          "Durability": 250
+        },
+        "recipe": "Crude Bow (III) 15 Fine wood 15 Core wood 6 Deer hide",
+        "prerequisites": "Workbench: Level 4"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Pierce",
+      "Wield": "Two-Handed",
+      "Backstab Multiplier": "3x",
+      "Parry Multiplier": "1.5x",
+      "Weight": 1.5,
+      "Block": 5,
+      "Knockback": 10,
+      "Repair Level": 1,
+      "Movement Speed": "-5%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2908,18 +4294,108 @@
     "description": "Dark wood strung with glistening sinew, a vicious thing.",
     "ID": "BowDraugrFang",
     "type": "Weapon",
-    "recipe": "10 Ancient bark 20 Silver 2 Deer hide 10 Guck",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Pierce Damage": 47,
+          "Poison Damage": 5,
+          "Durability": 100
+        },
+        "recipe": "10 Ancient bark 20 Silver 2 Deer hide 10 Guck",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Pierce Damage": 50,          
+          "Poison Damage": 10,
+          "Durability": 150
+        },
+        "recipe": "Draugr Fang (I) 5 Ancient bark 10 Silver 2 Deer hide 2 Guck",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Pierce Damage": 53,     
+          "Poison Damage": 15,   
+          "Durability": 200
+        },
+        "recipe": "Draugr Fang (II) 10 Ancient bark 20 Silver 4 Deer hide 4 Guck",
+        "prerequisites": "Forge: Level 4"
+      },      
+      {
+        "quality": "IV",
+        "stats": {
+          "Pierce Damage": 56,
+          "Poison Damage": 20,
+          "Durability": 250
+        },
+        "recipe": "Draugr Fang (III) 15 Ancient bark 30 Silver 6 Deer hide 6 Guck",
+        "prerequisites": "Forge: Level 5"
+      }
+    ],
+    "stats": {
+      "Damage Type": "Hybrid",
+      "Wield": "Two-Handed",
+      "Backstab Multiplier": "3x",
+      "Parry Multiplier": "1.5x",
+      "Weight": 1.5,
+      "Block": 5,
+      "Knockback": 20,
+      "Repair Level": 2,
+      "Movement Speed": "-5%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
   {
     "name": "Wood Shield",
-    "notes": "",
+    "notes": "Multiple styles are available for this shield when crafting.",
     "location": "",
     "description": "A simple wooden shield.",
     "ID": "ShieldWood",
     "type": "Weapon",
-    "recipe": "10 Wood 4 Resin 4 Leather scraps",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Block": 20, 
+          "Durability": 200
+        },
+        "recipe": "10 Wood 4 Resin 4 Leather scraps",
+        "prerequisites": "Workbench: Level 1"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Block": 25, 
+          "Durability": 250
+        },
+        "recipe": "Wood Shield (I) 5 Wood 2 Resin 2 Leather scraps",
+        "prerequisites": "Workbench: Level 2"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Block": 30,     
+          "Durability": 300
+        },
+        "recipe": "Wood Shield (II) 10 Wood 4 Resin 4 Leather scraps",
+        "prerequisites": "Workbench: Level 3"
+      }
+    ],
+    "stats": {
+      "Wield": "One-Handed",
+      "Parry Multiplier": "1.5x",
+      "Parry": 20,
+      "Weight": 4.0,
+      "Repair Level": 1,
+      "Movement Speed": "-5%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2930,62 +4406,286 @@
     "description": "A shield of burnished bronze, good to turn a blade or two.",
     "ID": "ShieldBronzeBuckler",
     "type": "Weapon",
-    "recipe": "10 Bronze 4 Wood",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Block": 45, 
+          "Durability": 200
+        },
+        "recipe": "10 Bronze 4 Wood",
+        "prerequisites": "Forge: Level 1"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Block": 50, 
+          "Durability": 250
+        },
+        "recipe": "Bronze Buckler (I) 5 Bronze 1 Wood",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Block": 55,     
+          "Durability": 300
+        },
+        "recipe": "Bronze Buckler (II) 10 Bronze 2 Wood",
+        "prerequisites": "Forge: Level 3"
+      }
+    ],
+    "stats": {
+      "Wield": "One-Handed",
+      "Parry Multiplier": "2.0x",
+      "Parry": 30,
+      "Weight": 3.0,
+      "Repair Level": 1,
+      "Movement Speed": "-5%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
   {
     "name": "Banded Shield",
-    "notes": "",
+    "notes": "Multiple styles are available for this shield when crafting.",
     "location": "",
     "description": "Banded with hoops of iron, a true warrior's companion.",
     "ID": "ShieldBanded",
     "type": "Weapon",
-    "recipe": "10 Fine wood 8 Iron",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Block": 60, 
+          "Parry": 40,
+          "Durability": 200
+        },
+        "recipe": "10 Fine wood 8 Iron",
+        "prerequisites": "Forge: Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Block": 65, 
+          "Parry": 45,
+          "Durability": 250
+        },
+        "recipe": "Banded Shield (I) 10 Fine wood 4 Iron",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Block": 70,     
+          "Parry": 50,
+          "Durability": 300
+        },
+        "recipe": "Banded Shield (II) 20 Fine wood 8 Iron",
+        "prerequisites": "Forge: Level 4"
+      }
+    ],
+    "stats": {
+      "Wield": "One-Handed",
+      "Parry Multiplier": "1.5x",
+      "Weight": 5.0,
+      "Repair Level": 2,
+      "Movement Speed": "-5%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
   {
     "name": "Silver Shield",
-    "notes": "",
+    "notes": "Multiple styles are available for this shield when crafting.",
     "location": "",
     "description": "A shield of radiant silver.",
     "ID": "ShieldSilver",
     "type": "Weapon",
-    "recipe": "10 Fine wood 8 Silver",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Block": 75, 
+          "Parry": 40,
+          "Durability": 200
+        },
+        "recipe": "10 Fine wood 8 Silver",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Block": 80, 
+          "Parry": 45,
+          "Durability": 250
+        },
+        "recipe": "Silver Shield (I) 10 Fine wood 4 Silver",
+        "prerequisites": "Forge: Level 4"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Block": 85,     
+          "Parry": 50,
+          "Durability": 300
+        },
+        "recipe": "Silver Shield (II) 20 Fine wood 8 Silver",
+        "prerequisites": "Forge: Level 5"
+      }
+    ],
+    "stats": {
+      "Wield": "One-Handed",
+      "Parry Multiplier": "1.5x",
+      "Weight": 5.0,
+      "Repair Level": 3,
+      "Movement Speed": "-5%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
   {
     "name": "Black Metal Shield",
-    "notes": "",
+    "notes": "Multiple styles are available for this shield when crafting.",
     "location": "",
     "description": "Fashioned from the strongest metal, able to turn even the deadliest blades.",
     "ID": "ShieldBlackmetal",
     "type": "Weapon",
-    "recipe": "10 Fine wood 8 Black metal 5 Chain",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Block": 90, 
+          "Parry": 50,
+          "Durability": 200
+        },
+        "recipe": "10 Fine wood 8 Black metal 5 Chain",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Block": 95, 
+          "Parry": 55,
+          "Durability": 250
+        },
+        "recipe": "Black Metal Shield (I) 10 Fine wood 4 Black metal 2 Chain",
+        "prerequisites": "Forge: Level 4"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Block": 100,     
+          "Parry": 60,
+          "Durability": 300
+        },
+        "recipe": "Black Metal Shield (II) 20 Fine wood 8 Black metal 4 Chain",
+        "prerequisites": "Forge: Level 5"
+      }
+    ],
+    "stats": {
+      "Wield": "One-Handed",
+      "Parry Multiplier": "1.5x",
+      "Weight": 5.0,
+      "Repair Level": 3,
+      "Movement Speed": "-5%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
   {
     "name": "Wood Tower Shield",
-    "notes": "",
+    "notes": "Multiple styles are available for this shield when crafting.",
     "location": "",
     "description": "A rough but heavy wooden shield.",
     "ID": "ShieldWoodTower",
     "type": "Weapon",
-    "recipe": "10 Wood 6 Leather scraps",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Block": 35, 
+          "Durability": 200
+        },
+        "recipe": "10 Wood 6 Leather scraps",
+        "prerequisites": "Workbench: Level 1"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Block": 40, 
+          "Durability": 250
+        },
+        "recipe": "Wood Tower Shield (I) 5 Wood 3 Leather scraps",
+        "prerequisites": "Workbench: Level 2"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Block": 45,     
+          "Durability": 300
+        },
+        "recipe": "Wood Tower Shield (II) 10 Wood 4 Resin 4 Leather scraps",
+        "prerequisites": "Workbench: Level 3"
+      }
+    ],
+    "stats": {
+      "Wield": "One-Handed",
+      "Weight": 4.0,
+      "Repair Level": 1,
+      "Movement Speed": "-20%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
   {
     "name": "Iron Tower Shield",
-    "notes": "",
+    "notes": "Multiple styles are available for this shield when crafting.",
     "location": "",
     "description": "A tall shield of strong iron.",
     "ID": "ShieldIronTower",
     "type": "Weapon",
-    "recipe": "15 Fine wood 10 Iron",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Block": 75, 
+          "Durability": 200
+        },
+        "recipe": "15 Fine wood 10 Iron",
+        "prerequisites": "Forge : Level 2"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Block": 80, 
+          "Durability": 250
+        },
+        "recipe": "Wood Tower Shield (I) 10 Fine wood 5 Iron",
+        "prerequisites": "Forge : Level 3"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Block": 85,     
+          "Durability": 300
+        },
+        "recipe": "Wood Tower Shield (II) 20 Fine wood 10 Iron",
+        "prerequisites": "Forge : Level 4"
+      }
+    ],
+    "stats": {
+      "Wield": "One-Handed",
+      "Weight": 4.0,
+      "Repair Level": 2,
+      "Movement Speed": "-20%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -2996,7 +4696,42 @@
     "description": "A tower shield of gleaming dark metal.",
     "ID": "ShieldBlackmetalTower",
     "type": "Weapon",
-    "recipe": "15 Fine wood 10 Black metal 7 Chain",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Block": 105, 
+          "Durability": 200
+        },
+        "recipe": "15 Fine wood 10 Black metal 7 Chain",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Block": 110, 
+          "Durability": 250
+        },
+        "recipe": "Black Metal Tower Shield (I) 15 Fine wood 6 Black metal 2 Chain",
+        "prerequisites": "Forge: Level 4"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Block": 115,     
+          "Durability": 300
+        },
+        "recipe": "Black Metal Tower Shield (II) 20 Fine wood 8 Black metal 4 Chain",
+        "prerequisites": "Forge: Level 5"
+      }
+    ],
+    "stats": {
+      "Wield": "One-Handed",
+      "Weight": 5.0,
+      "Repair Level": 3,
+      "Movement Speed": "-20%"
+    },
     "prerequisites": "",
     "subtype": ""
   },
@@ -3007,7 +4742,42 @@
     "description": "A sturdy shield of overlapping scales.",
     "ID": "ShieldSerpentscale",
     "type": "Weapon",
-    "recipe": "10 Fine wood 4 Iron 8 Serpent scale",
+    "recipe": "",
+    "upgrades": [
+      {
+        "quality": "I",
+        "stats": {
+          "Block": 90, 
+          "Durability": 250
+        },
+        "recipe": "10 Fine wood 4 Iron 8 Serpent scale",
+        "prerequisites": "Forge: Level 3"
+      },
+      {
+        "quality": "II",
+        "stats": {
+          "Block": 95, 
+          "Durability": 300
+        },
+        "recipe": "Serpent Scale Shield (I) 10 Fine wood 2 Iron 4 Serpent scale",
+        "prerequisites": "Forge: Level 4"
+      },
+      {
+        "quality": "III",
+        "stats": {
+          "Block": 100,     
+          "Durability": 350
+        },
+        "recipe": "Serpent Scale Shield (II) 20 Fine wood 4 Iron 8 Serpent scale",
+        "prerequisites": "Forge: Level 5"
+      }
+    ],
+    "stats": {
+      "Wield": "One-Handed",
+      "Weight": 5.0,
+      "Repair Level": 3,
+      "Movement Speed": "-10%"
+    },
     "prerequisites": "",
     "subtype": ""
   },

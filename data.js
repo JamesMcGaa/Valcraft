@@ -67,7 +67,10 @@ function processUpgradable(rawData) {
     newData.original_name = rawData.name;
     newData.name = `${newData.name} (${upgrade.quality})`;
     newData.recipe = upgrade.recipe;
-    newData.stats = upgrade.stats;
+    if (typeof newData.stats === 'object' && typeof upgrade.stats === 'object') {
+      Object.assign(upgrade.stats, newData.stats);
+      newData.stats = upgrade.stats;
+    }
     processRawData(newData);
   });
 }

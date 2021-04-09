@@ -1427,7 +1427,7 @@
           "Durability": 450, 
           "Armor": 4
         },
-        "recipe": "Leather Helmet (I) 6 Deer hide 5 Bone fragments",
+        "recipe": "1 Leather Helmet (I) 6 Deer hide 5 Bone fragments",
         "prerequisites": "Workbench: Level 3"
       },
       {
@@ -1436,7 +1436,7 @@
           "Durability": 500, 
           "Armor": 6
         },
-        "recipe": "Leather Helmet (II) 12 Deer hide 10 Bone fragments",
+        "recipe": "1 Leather Helmet (II) 12 Deer hide 10 Bone fragments",
         "prerequisites": "Workbench: Level 4"
       },      
       {
@@ -1445,7 +1445,7 @@
           "Durability": 550, 
           "Armor": 8
         },
-        "recipe": "Leather Helmet (III) 18 Deer hide 15 Bone fragments",
+        "recipe": "1 Leather Helmet (III) 18 Deer hide 15 Bone fragments",
         "prerequisites": "Workbench: Level 5"
       }
     ],
@@ -1476,7 +1476,7 @@
           "Durability": 450, 
           "Armor": 4
         },
-        "recipe": "Leather Tunic (I) 6 Deer hide 5 Bone fragments",
+        "recipe": "1 Leather Tunic (I) 6 Deer hide 5 Bone fragments",
         "prerequisites": "Workbench: Level 3"
       },
       {
@@ -1485,7 +1485,7 @@
           "Durability": 500, 
           "Armor": 6
         },
-        "recipe": "Leather Tunic (II) 12 Deer hide 10 Bone fragments",
+        "recipe": "1 Leather Tunic (II) 12 Deer hide 10 Bone fragments",
         "prerequisites": "Workbench: Level 4"
       },      
       {
@@ -1494,7 +1494,7 @@
           "Durability": 550, 
           "Armor": 8
         },
-        "recipe": "Leather Tunic (III) 18 Deer hide 15 Bone fragments",
+        "recipe": "1 Leather Tunic (III) 18 Deer hide 15 Bone fragments",
         "prerequisites": "Workbench: Level 5"
       }
     ],
@@ -1525,7 +1525,7 @@
           "Durability": 450, 
           "Armor": 4
         },
-        "recipe": "Leather Pants (I) 6 Deer hide 5 Bone fragments",
+        "recipe": "1 Leather Pants (I) 6 Deer hide 5 Bone fragments",
         "prerequisites": "Workbench: Level 3"
       },
       {
@@ -1534,7 +1534,7 @@
           "Durability": 500, 
           "Armor": 6
         },
-        "recipe": "Leather Pants (II) 12 Deer hide 10 Bone fragments",
+        "recipe": "1 Leather Pants (II) 12 Deer hide 10 Bone fragments",
         "prerequisites": "Workbench: Level 4"
       },      
       {
@@ -1543,7 +1543,7 @@
           "Durability": 550, 
           "Armor": 8
         },
-        "recipe": "Leather Pants (III) 18 Deer hide 15 Bone fragments",
+        "recipe": "1 Leather Pants (III) 18 Deer hide 15 Bone fragments",
         "prerequisites": "Workbench: Level 5"
       }
     ],
@@ -1574,7 +1574,7 @@
           "Durability": 450, 
           "Armor": 2
         },
-        "recipe": "Deer Hide Cape (I) 4 Deer hide 5 Bone fragments",
+        "recipe": "1 Deer Hide Cape (I) 4 Deer hide 5 Bone fragments",
         "prerequisites": "Workbench: Level 3"
       },
       {
@@ -1583,7 +1583,7 @@
           "Durability": 500, 
           "Armor": 3
         },
-        "recipe": "Deer Hide Cape (II) 8 Deer hide 10 Bone fragments",
+        "recipe": "1 Deer Hide Cape (II) 8 Deer hide 10 Bone fragments",
         "prerequisites": "Workbench: Level 4"
       },      
       {
@@ -1592,7 +1592,7 @@
           "Durability": 550, 
           "Armor": 4
         },
-        "recipe": "Deer Hide Cape (III) 12 Deer hide 15 Bone fragments",
+        "recipe": "1 Deer Hide Cape (III) 12 Deer hide 15 Bone fragments",
         "prerequisites": "Workbench: Level 5"
       }
     ],
@@ -1623,7 +1623,7 @@
           "Durability": 700, 
           "Armor": 8
         },
-        "recipe": "Troll Leather Helmet (I) 2 Troll hide",
+        "recipe": "1 Troll Leather Helmet (I) 2 Troll hide",
         "prerequisites": "Workbench: Level 4"
       },
       {
@@ -1632,7 +1632,7 @@
           "Durability": 900, 
           "Armor": 10
         },
-        "recipe": "Troll Leather Helmet (II) 4 Troll hide",
+        "recipe": "1 Troll Leather Helmet (II) 4 Troll hide",
         "prerequisites": "Workbench: Level 5"
       },      
       {
@@ -1641,7 +1641,7 @@
           "Durability": 1100, 
           "Armor": 12
         },
-        "recipe": "Troll Leather Helmet (III) 5 Troll hide",
+        "recipe": "1 Troll Leather Helmet (III) 5 Troll hide",
         "prerequisites": "Workbench: Level 6"
       }
     ],
@@ -1672,7 +1672,7 @@
           "Durability": 700, 
           "Armor": 8
         },
-        "recipe": "Troll Leather Tunic (I) 2 Troll hide",
+        "recipe": "1 Troll Leather Tunic (I) 2 Troll hide",
         "prerequisites": "Workbench: Level 4"
       },
       {
@@ -1681,7 +1681,7 @@
           "Durability": 900, 
           "Armor": 10
         },
-        "recipe": "Troll Leather Tunic (II) 4 Troll hide",
+        "recipe": "1 Troll Leather Tunic (II) 4 Troll hide",
         "prerequisites": "Workbench: Level 5"
       },      
       {
@@ -1690,7 +1690,7 @@
           "Durability": 1100, 
           "Armor": 12
         },
-        "recipe": "Troll Leather Tunic (III) 5 Troll hide",
+        "recipe": "1 Troll Leather Tunic (III) 5 Troll hide",
         "prerequisites": "Workbench: Level 6"
       }
     ],
@@ -1721,7 +1721,7 @@
           "Durability": 700, 
           "Armor": 8
         },
-        "recipe": "Troll Leather Pants (I) 2 Troll hide",
+        "recipe": "1 Troll Leather Pants (I) 2 Troll hide",
         "prerequisites": "Workbench: Level 4"
       },
       {
@@ -1730,7 +1730,7 @@
           "Durability": 900, 
           "Armor": 10
         },
-        "recipe": "Troll Leather Pants (II) 4 Troll hide",
+        "recipe": "1 Troll Leather Pants (II) 4 Troll hide",
         "prerequisites": "Workbench: Level 5"
       },      
       {
@@ -1739,7 +1739,7 @@
           "Durability": 1100, 
           "Armor": 12
         },
-        "recipe": "Troll Leather Pants (III) 5 Troll hide",
+        "recipe": "1 Troll Leather Pants (III) 5 Troll hide",
         "prerequisites": "Workbench: Level 6"
       }
     ],
@@ -1770,7 +1770,7 @@
           "Durability": 550, 
           "Armor": 2
         },
-        "recipe": "Troll Hide Cape (I) 5 Troll hide 5 Bone fragments",
+        "recipe": "1 Troll Hide Cape (I) 5 Troll hide 5 Bone fragments",
         "prerequisites": "Workbench: Level 4"
       },
       {
@@ -1779,7 +1779,7 @@
           "Durability": 600, 
           "Armor": 3
         },
-        "recipe": "Troll Hide Cape (II) 10 Troll hide 10 Bone fragments",
+        "recipe": "1 Troll Hide Cape (II) 10 Troll hide 10 Bone fragments",
         "prerequisites": "Workbench: Level 5"
       },      
       {
@@ -1788,7 +1788,7 @@
           "Durability": 650, 
           "Armor": 4
         },
-        "recipe": "Troll Hide Cape (III) 15 Troll hide 15 Bone fragments",
+        "recipe": "1 Troll Hide Cape (III) 15 Troll hide 15 Bone fragments",
         "prerequisites": "Workbench: Level 6"
       }
     ],
@@ -1819,7 +1819,7 @@
           "Durability": 1200, 
           "Armor": 10
         },
-        "recipe": "Bronze Helmet (I) 3 Bronze",
+        "recipe": "1 Bronze Helmet (I) 3 Bronze",
         "prerequisites": "Forge: Level 2"
       },
       {
@@ -1828,7 +1828,7 @@
           "Durability": 1400, 
           "Armor": 12
         },
-        "recipe": "Bronze Helmet (II) 6 Bronze",
+        "recipe": "1 Bronze Helmet (II) 6 Bronze",
         "prerequisites": "Forge: Level 3"
       },      
       {
@@ -1837,7 +1837,7 @@
           "Durability": 1600, 
           "Armor": 14
         },
-        "recipe": "Bronze Helmet (III) 9 Bronze",
+        "recipe": "1 Bronze Helmet (III) 9 Bronze",
         "prerequisites": "Forge: Level 4"
       }
     ],
@@ -1868,7 +1868,7 @@
           "Durability": 1200, 
           "Armor": 10
         },
-        "recipe": "Bronze Plate Cuirass (I) 3 Bronze",
+        "recipe": "1 Bronze Plate Cuirass (I) 3 Bronze",
         "prerequisites": "Forge: Level 2"
       },
       {
@@ -1877,7 +1877,7 @@
           "Durability": 1400, 
           "Armor": 12
         },
-        "recipe": "Bronze Plate Cuirass (II) 6 Bronze",
+        "recipe": "1 Bronze Plate Cuirass (II) 6 Bronze",
         "prerequisites": "Forge: Level 3"
       },      
       {
@@ -1886,7 +1886,7 @@
           "Durability": 1600, 
           "Armor": 14
         },
-        "recipe": "Bronze Plate Cuirass (III) 9 Bronze",
+        "recipe": "1 Bronze Plate Cuirass (III) 9 Bronze",
         "prerequisites": "Forge: Level 4"
       }
     ],
@@ -1917,7 +1917,7 @@
           "Durability": 1200, 
           "Armor": 10
         },
-        "recipe": "Bronze Plate Leggings (I) 3 Bronze",
+        "recipe": "1 Bronze Plate Leggings (I) 3 Bronze",
         "prerequisites": "Forge: Level 2"
       },
       {
@@ -1926,7 +1926,7 @@
           "Durability": 1400, 
           "Armor": 12
         },
-        "recipe": "Bronze Plate Leggings (II) 6 Bronze",
+        "recipe": "1 Bronze Plate Leggings (II) 6 Bronze",
         "prerequisites": "Forge: Level 3"
       },      
       {
@@ -1935,7 +1935,7 @@
           "Durability": 1600, 
           "Armor": 14
         },
-        "recipe": "Bronze Plate Leggings (III) 9 Bronze",
+        "recipe": "1 Bronze Plate Leggings (III) 9 Bronze",
         "prerequisites": "Forge: Level 4"
       }
     ],
@@ -1966,7 +1966,7 @@
           "Durability": 1400, 
           "Armor": 16
         },
-        "recipe": "Iron Helmet (I) 5 Iron",
+        "recipe": "1 Iron Helmet (I) 5 Iron",
         "prerequisites": "Forge: Level 3"
       },
       {
@@ -1975,7 +1975,7 @@
           "Durability": 1600, 
           "Armor": 18
         },
-        "recipe": "Iron Helmet (II) 10 Iron",
+        "recipe": "1 Iron Helmet (II) 10 Iron",
         "prerequisites": "Forge: Level 4"
       },      
       {
@@ -1984,7 +1984,7 @@
           "Durability": 1800, 
           "Armor": 20
         },
-        "recipe": "Iron Helmet (III) 15 Iron",
+        "recipe": "1 Iron Helmet (III) 15 Iron",
         "prerequisites": "Forge: Level 5"
       }
     ],
@@ -2015,7 +2015,7 @@
           "Durability": 1400, 
           "Armor": 16
         },
-        "recipe": "Iron Scale Mail (I) 5 Iron",
+        "recipe": "1 Iron Scale Mail (I) 5 Iron",
         "prerequisites": "Forge: Level 3"
       },
       {
@@ -2024,7 +2024,7 @@
           "Durability": 1600, 
           "Armor": 18
         },
-        "recipe": "Iron Scale Mail (II) 10 Iron",
+        "recipe": "1 Iron Scale Mail (II) 10 Iron",
         "prerequisites": "Forge: Level 4"
       },      
       {
@@ -2033,7 +2033,7 @@
           "Durability": 1800, 
           "Armor": 20
         },
-        "recipe": "Iron Scale Mail (III) 15 Iron",
+        "recipe": "1 Iron Scale Mail (III) 15 Iron",
         "prerequisites": "Forge: Level 5"
       }
     ],
@@ -2064,7 +2064,7 @@
           "Durability": 1400, 
           "Armor": 16
         },
-        "recipe": "Iron Greaves (I) 5 Iron",
+        "recipe": "1 Iron Greaves (I) 5 Iron",
         "prerequisites": "Forge: Level 3"
       },
       {
@@ -2073,7 +2073,7 @@
           "Durability": 1600, 
           "Armor": 18
         },
-        "recipe": "Iron Greaves (II) 10 Iron",
+        "recipe": "1 Iron Greaves (II) 10 Iron",
         "prerequisites": "Forge: Level 4"
       },      
       {
@@ -2082,7 +2082,7 @@
           "Durability": 1800, 
           "Armor": 20
         },
-        "recipe": "Iron Greaves (III) 15 Iron",
+        "recipe": "1 Iron Greaves (III) 15 Iron",
         "prerequisites": "Forge: Level 5"
       }
     ],
@@ -2113,7 +2113,7 @@
           "Durability": 1200, 
           "Armor": 22
         },
-        "recipe": "Drake Helmet (I) 5 Silver",
+        "recipe": "1 Drake Helmet (I) 5 Silver",
         "prerequisites": "Forge: Level 3"
       },
       {
@@ -2122,7 +2122,7 @@
           "Durability": 1400, 
           "Armor": 24
         },
-        "recipe": "Drake Helmet (II) 10 Silver",
+        "recipe": "1 Drake Helmet (II) 10 Silver",
         "prerequisites": "Forge: Level 4"
       },      
       {
@@ -2131,7 +2131,7 @@
           "Durability": 1600, 
           "Armor": 26
         },
-        "recipe": "Drake Helmet (III) 15 Silver",
+        "recipe": "1 Drake Helmet (III) 15 Silver",
         "prerequisites": "Forge: Level 5"
       }
     ],
@@ -2164,7 +2164,7 @@
           "Armor": 22,
           "Movement Speed": "-5%"
         },
-        "recipe": "Wolf Armor Chest (I) 5 Silver 2 Wolf pelt",
+        "recipe": "1 Wolf Armor Chest (I) 5 Silver 2 Wolf pelt",
         "prerequisites": "Forge: Level 3"
       },
       {
@@ -2174,7 +2174,7 @@
           "Armor": 24,
           "Movement Speed": "-5%"
         },
-        "recipe": "Wolf Armor Chest (II) 10 Silver 4 Wolf pelt",
+        "recipe": "1 Wolf Armor Chest (II) 10 Silver 4 Wolf pelt",
         "prerequisites": "Forge: Level 4"
       },      
       {
@@ -2184,7 +2184,7 @@
           "Armor": 26,
           "Movement Speed": "-5%"
         },
-        "recipe": "Wolf Armor Chest (III) 15 Silver 6 Wolf pelt",
+        "recipe": "1 Wolf Armor Chest (III) 15 Silver 6 Wolf pelt",
         "prerequisites": "Forge: Level 5"
       }
     ],
@@ -2217,7 +2217,7 @@
           "Armor": 22,
           "Movement Speed": "-5%"
         },
-        "recipe": "Wolf Armor Legs (I) 5 Silver 2 Wolf pelt 1 Wolf fang",
+        "recipe": "1 Wolf Armor Legs (I) 5 Silver 2 Wolf pelt 1 Wolf fang",
         "prerequisites": "Forge: Level 3"
       },
       {
@@ -2227,7 +2227,7 @@
           "Armor": 24,
           "Movement Speed": "-5%"
         },
-        "recipe": "Wolf Armor Legs (II) 10 Silver 4 Wolf pelt 2 Wolf fang",
+        "recipe": "1 Wolf Armor Legs (II) 10 Silver 4 Wolf pelt 2 Wolf fang",
         "prerequisites": "Forge: Level 4"
       },      
       {
@@ -2237,7 +2237,7 @@
           "Armor": 26,
           "Movement Speed": "-5%"
         },
-        "recipe": "Wolf Armor Legs (III) 15 Silver 6 Wolf pelt 3 Wolf fang",
+        "recipe": "1 Wolf Armor Legs (III) 15 Silver 6 Wolf pelt 3 Wolf fang",
         "prerequisites": "Forge: Level 5"
       }
     ],
@@ -2268,7 +2268,7 @@
           "Durability": 1200, 
           "Armor": 2
         },
-        "recipe": "Wolf Fur Cape (I) 4 Wolf pelt 2 Silver",
+        "recipe": "1 Wolf Fur Cape (I) 4 Wolf pelt 2 Silver",
         "prerequisites": "Workbench: Level 3"
       },
       {
@@ -2277,7 +2277,7 @@
           "Durability": 1400, 
           "Armor": 3
         },
-        "recipe": "Wolf Fur Cape (II) 8 Wolf pelt 4 Silver",
+        "recipe": "1 Wolf Fur Cape (II) 8 Wolf pelt 4 Silver",
         "prerequisites": "Workbench: Level 4"
       },      
       {
@@ -2286,7 +2286,7 @@
           "Durability": 1600, 
           "Armor": 4
         },
-        "recipe": "Wolf Fur Cape (III) 12 Wolf pelt 6 Silver",
+        "recipe": "1 Wolf Fur Cape (III) 12 Wolf pelt 6 Silver",
         "prerequisites": "Workbench: Level 5"
       }
     ],
@@ -2317,7 +2317,7 @@
           "Durability": 1200, 
           "Armor": 28
         },
-        "recipe": "Padded Helmet (I) 5 Iron",
+        "recipe": "1 Padded Helmet (I) 5 Iron",
         "prerequisites": "Forge: Level 2"
       },
       {
@@ -2326,7 +2326,7 @@
           "Durability": 1400, 
           "Armor": 30
         },
-        "recipe": "Padded Helmet (II) 10 Iron",
+        "recipe": "1 Padded Helmet (II) 10 Iron",
         "prerequisites": "Forge: Level 3"
       },      
       {
@@ -2335,7 +2335,7 @@
           "Durability": 1600, 
           "Armor": 32
         },
-        "recipe": "Padded Helmet (III) 15 Iron",
+        "recipe": "1 Padded Helmet (III) 15 Iron",
         "prerequisites": "Forge: Level 4"
       }
     ],
@@ -2368,7 +2368,7 @@
           "Armor": 28,
           "Movement Speed": "-5%"
         },
-        "recipe": "Padded Cuirass (I) 3 Iron",
+        "recipe": "1 Padded Cuirass (I) 3 Iron",
         "prerequisites": "Forge: Level 3"
       },
       {
@@ -2378,7 +2378,7 @@
           "Armor": 30,
           "Movement Speed": "-5%"
         },
-        "recipe": "Padded Cuirass (II) 6 Iron",
+        "recipe": "1 Padded Cuirass (II) 6 Iron",
         "prerequisites": "Forge: Level 4"
       },      
       {
@@ -2388,7 +2388,7 @@
           "Armor": 32,
           "Movement Speed": "-5%"
         },
-        "recipe": "Padded Cuirass (III) 9 Iron",
+        "recipe": "1 Padded Cuirass (III) 9 Iron",
         "prerequisites": "Forge: Level 5"
       }
     ],
@@ -2421,7 +2421,7 @@
           "Armor": 28,
           "Movement Speed": "-5%"
         },
-        "recipe": "Padded Greaves (I) 3 Iron",
+        "recipe": "1 Padded Greaves (I) 3 Iron",
         "prerequisites": "Forge: Level 3"
       },
       {
@@ -2431,7 +2431,7 @@
           "Armor": 30,
           "Movement Speed": "-5%"
         },
-        "recipe": "Padded Greaves (II) 6 Iron",
+        "recipe": "1 Padded Greaves (II) 6 Iron",
         "prerequisites": "Forge: Level 4"
       },      
       {
@@ -2441,7 +2441,7 @@
           "Armor": 32,
           "Movement Speed": "-5%"
         },
-        "recipe": "Padded Greaves (III) 9 Iron",
+        "recipe": "1 Padded Greaves (III) 9 Iron",
         "prerequisites": "Forge: Level 5"
       }
     ],
@@ -2472,7 +2472,7 @@
           "Durability": 1550, 
           "Armor": 2
         },
-        "recipe": "Linen Cape (I) 4 Linen thread",
+        "recipe": "1 Linen Cape (I) 4 Linen thread",
         "prerequisites": "Workbench: Level 3"
       },
       {
@@ -2481,7 +2481,7 @@
           "Durability": 1600, 
           "Armor": 3
         },
-        "recipe": "Linen Cape (II) 8 Linen thread",
+        "recipe": "1 Linen Cape (II) 8 Linen thread",
         "prerequisites": "Workbench: Level 4"
       },      
       {
@@ -2490,7 +2490,7 @@
           "Durability": 1650, 
           "Armor": 4
         },
-        "recipe": "Linen Cape (III) 12 Linen thread",
+        "recipe": "1 Linen Cape (III) 12 Linen thread",
         "prerequisites": "Workbench: Level 5"
       }
     ],
@@ -2521,7 +2521,7 @@
           "Durability": 1250, 
           "Armor": 2
         },
-        "recipe": "Lox Cape (I) 2 Lox pelt",
+        "recipe": "1 Lox Cape (I) 2 Lox pelt",
         "prerequisites": "Workbench: Level 3"
       },
       {
@@ -2530,7 +2530,7 @@
           "Durability": 1300, 
           "Armor": 3
         },
-        "recipe": "Lox Cape (II) 4 Lox pelt",
+        "recipe": "1 Lox Cape (II) 4 Lox pelt",
         "prerequisites": "Workbench: Level 4"
       },      
       {
@@ -2539,7 +2539,7 @@
           "Durability": 1350, 
           "Armor": 4
         },
-        "recipe": "Lox Cape (III) 6 Lox pelt",
+        "recipe": "1 Lox Cape (III) 6 Lox pelt",
         "prerequisites": "Workbench: Level 5"
       }
     ],
@@ -2630,7 +2630,7 @@
           "Parry": 25,
           "Durability": 150
         },
-        "recipe": "Club (I) 5 Bone fragments",
+        "recipe": "1 Club (I) 5 Bone fragments",
         "prerequisites": "Workbench: Level 2"
       },
       {
@@ -2640,7 +2640,7 @@
           "Parry": 30,
           "Durability": 200
         },
-        "recipe": "Club (II) 10 Bone fragments",
+        "recipe": "1 Club (II) 10 Bone fragments",
         "prerequisites": "Workbench: Level 3"
       },      
       {
@@ -2650,7 +2650,7 @@
           "Parry": 35,
           "Durability": 250
         },
-        "recipe": "Club (III) 15 Bone fragments",
+        "recipe": "1 Club (III) 15 Bone fragments",
         "prerequisites": "Workbench: Level 4"
       }
     ],
@@ -2695,7 +2695,7 @@
           "Parry": 35,
           "Durability": 250
         },
-        "recipe": "Bronze Mace (I) 4 Bronze",
+        "recipe": "1 Bronze Mace (I) 4 Bronze",
         "prerequisites": "Forge: Level 2"
       },
       {
@@ -2705,7 +2705,7 @@
           "Parry": 40,
           "Durability": 300
         },
-        "recipe": "Bronze Mace (II) 8 Bronze",
+        "recipe": "1 Bronze Mace (II) 8 Bronze",
         "prerequisites": "Forge: Level 3"
       },      
       {
@@ -2715,7 +2715,7 @@
           "Parry": 45,
           "Durability": 350
         },
-        "recipe": "Bronze Mace (III) 12 Bronze",
+        "recipe": "1 Bronze Mace (III) 12 Bronze",
         "prerequisites": "Forge: Level 4"
       }
     ],
@@ -2760,7 +2760,7 @@
           "Parry": 35,
           "Durability": 250
         },
-        "recipe": "Iron Mace (I) 10 Iron",
+        "recipe": "1 Iron Mace (I) 10 Iron",
         "prerequisites": "Forge: Level 3"
       },
       {
@@ -2770,7 +2770,7 @@
           "Parry": 40,
           "Durability": 300
         },
-        "recipe": "Iron Mace (II) 20 Iron",
+        "recipe": "1 Iron Mace (II) 20 Iron",
         "prerequisites": "Forge: Level 4"
       },      
       {
@@ -2780,7 +2780,7 @@
           "Parry": 45,
           "Durability": 350
         },
-        "recipe": "Iron Mace (III) 30 Iron",
+        "recipe": "1 Iron Mace (III) 30 Iron",
         "prerequisites": "Forge: Level 5"
       }
     ],
@@ -2825,7 +2825,7 @@
           "Parry": 35,
           "Durability": 200
         },
-        "recipe": "Porcupine (I) 2 Iron 2 Needle",
+        "recipe": "1 Porcupine (I) 2 Iron 2 Needle",
         "prerequisites": "Forge: Level 5"
       },
       {
@@ -2835,7 +2835,7 @@
           "Parry": 40,
           "Durability": 250
         },
-        "recipe": "Porcupine (II) 4 Iron 4 Needle",
+        "recipe": "1 Porcupine (II) 4 Iron 4 Needle",
         "prerequisites": "Forge: Level 6"
       },      
       {
@@ -2845,7 +2845,7 @@
           "Parry": 45,
           "Durability": 300
         },
-        "recipe": "Porcupine (III) 6 Iron 6 Needle",
+        "recipe": "1 Porcupine (III) 6 Iron 6 Needle",
         "prerequisites": "Forge: Level 7"
       }
     ],
@@ -2889,7 +2889,7 @@
           "Parry": 35,
           "Durability": 250
         },
-        "recipe": "Frostner (I) 15 Silver",
+        "recipe": "1 Frostner (I) 15 Silver",
         "prerequisites": "Forge: Level 4"
       },
       {
@@ -2899,7 +2899,7 @@
           "Parry": 40,
           "Durability": 300
         },
-        "recipe": "Frostner (II) 30 Silver",
+        "recipe": "1 Frostner (II) 30 Silver",
         "prerequisites": "Forge: Level 5"
       },      
       {
@@ -2909,7 +2909,7 @@
           "Parry": 45,
           "Durability": 350
         },
-        "recipe": "Frostner (III) 45 Silver",
+        "recipe": "1 Frostner (III) 45 Silver",
         "prerequisites": "Forge: Level 6"
       }
     ],
@@ -2955,7 +2955,7 @@
           "Parry": 60,
           "Durability": 150
         },
-        "recipe": "Stagbreaker (I) 5 Core wood 2 Deer trophy 1 Leather scraps 10 Bone fragments",
+        "recipe": "1 Stagbreaker (I) 5 Core wood 2 Deer trophy 1 Leather scraps 10 Bone fragments",
         "prerequisites": "Workbench: Level 3"
       },
       {
@@ -2965,7 +2965,7 @@
           "Parry": 70,
           "Durability": 200
         },
-        "recipe": "Stagbreaker (II) 10 Core wood 4 Deer trophy 2 Leather scraps 20 Bone fragments",
+        "recipe": "1 Stagbreaker (II) 10 Core wood 4 Deer trophy 2 Leather scraps 20 Bone fragments",
         "prerequisites": "Workbench: Level 4"
       },      
       {
@@ -2975,7 +2975,7 @@
           "Parry": 80,
           "Durability": 250
         },
-        "recipe": "Stagbreaker (III) 15 Core wood 6 Deer trophy 3 Leather scraps 30 Bone fragments",
+        "recipe": "1 Stagbreaker (III) 15 Core wood 6 Deer trophy 3 Leather scraps 30 Bone fragments",
         "prerequisites": "Workbench: Level 5"
       }
     ],
@@ -3020,7 +3020,7 @@
           "Parry": 60,
           "Durability": 150
         },
-        "recipe": "Iron Sledge (I) 2 Ancient bark 15 Iron 2 Ymir flesh",
+        "recipe": "1 Iron Sledge (I) 2 Ancient bark 15 Iron 2 Ymir flesh",
         "prerequisites": "Forge: Level 3"
       },
       {
@@ -3030,7 +3030,7 @@
           "Parry": 70,
           "Durability": 200
         },
-        "recipe": "Iron Sledge (II) 4 Ancient bark 30 Iron 4 Ymir flesh",
+        "recipe": "1 Iron Sledge (II) 4 Ancient bark 30 Iron 4 Ymir flesh",
         "prerequisites": "Forge: Level 4"
       },      
       {
@@ -3040,7 +3040,7 @@
           "Parry": 80,
           "Durability": 250
         },
-        "recipe": "Iron Sledge (III) 6 Ancient bark 45 Iron 6 Ymir flesh",
+        "recipe": "1 Iron Sledge (III) 6 Ancient bark 45 Iron 6 Ymir flesh",
         "prerequisites": "Forge: Level 5"
       }
     ],
@@ -3084,7 +3084,7 @@
           "Parry": 75,
           "Durability": 250
         },
-        "recipe": "Battleaxe (I) 5 Ancient bark 15 Iron",
+        "recipe": "1 Battleaxe (I) 5 Ancient bark 15 Iron",
         "prerequisites": "Forge: Level 3"
       },
       {
@@ -3094,7 +3094,7 @@
           "Parry": 80,
           "Durability": 300
         },
-        "recipe": "Battleaxe (II) 10 Ancient bark 30 Iron",
+        "recipe": "1 Battleaxe (II) 10 Ancient bark 30 Iron",
         "prerequisites": "Forge: Level 4"
       },      
       {
@@ -3104,7 +3104,7 @@
           "Parry": 85,
           "Durability": 350
         },
-        "recipe": "Battleaxe (III) 15 Ancient bark 45 Iron",
+        "recipe": "1 Battleaxe (III) 15 Ancient bark 45 Iron",
         "prerequisites": "Forge: Level 5"
       }
     ],
@@ -3150,7 +3150,7 @@
           "Parry": 15,
           "Durability": 150
         },
-        "recipe": "Flint Knife (I) 2 Flint",
+        "recipe": "1 Flint Knife (I) 2 Flint",
         "prerequisites": "Workbench: Level 2"
       },
       {
@@ -3161,7 +3161,7 @@
           "Parry": 20,
           "Durability": 200
         },
-        "recipe": "Flint Knife (II) 4 Flint",
+        "recipe": "1 Flint Knife (II) 4 Flint",
         "prerequisites": "Workbench: Level 3"
       },      
       {
@@ -3172,7 +3172,7 @@
           "Parry": 25,
           "Durability": 250
         },
-        "recipe": "Flint Knife (III) 6 Flint",
+        "recipe": "1 Flint Knife (III) 6 Flint",
         "prerequisites": "Workbench: Level 4"
       }
     ],
@@ -3217,7 +3217,7 @@
           "Parry": 15,
           "Durability": 150
         },
-        "recipe": "Copper Knife (I) 4 Copper 8 Greydwarf eye",
+        "recipe": "1 Copper Knife (I) 4 Copper 8 Greydwarf eye",
         "prerequisites": "Forge: Level 2"
       },
       {
@@ -3228,7 +3228,7 @@
           "Parry": 20,
           "Durability": 200
         },
-        "recipe": "Copper Knife (II) 8 Copper 16 Greydwarf eye",
+        "recipe": "1 Copper Knife (II) 8 Copper 16 Greydwarf eye",
         "prerequisites": "Forge: Level 3"
       },      
       {
@@ -3239,7 +3239,7 @@
           "Parry": 25,
           "Durability": 250
         },
-        "recipe": "Copper Knife (III) 12 Copper 24 Greydwarf eye",
+        "recipe": "1 Copper Knife (III) 12 Copper 24 Greydwarf eye",
         "prerequisites": "Forge: Level 4"
       }
     ],
@@ -3284,7 +3284,7 @@
           "Parry": 15,
           "Durability": 150
         },
-        "recipe": "Abyssal Razor (I) 10 Chitin",
+        "recipe": "1 Abyssal Razor (I) 10 Chitin",
         "prerequisites": "Workbench: Level 3"
       },
       {
@@ -3295,7 +3295,7 @@
           "Parry": 20,
           "Durability": 200
         },
-        "recipe": "Abyssal Razor (II) 20 Chitin",
+        "recipe": "1 Abyssal Razor (II) 20 Chitin",
         "prerequisites": "Workbench: Level 4"
       },      
       {
@@ -3306,7 +3306,7 @@
           "Parry": 25,
           "Durability": 250
         },
-        "recipe": "Abyssal Razor (III) 30 Chitin",
+        "recipe": "1 Abyssal Razor (III) 30 Chitin",
         "prerequisites": "Workbench: Level 5"
       }
     ],
@@ -3351,7 +3351,7 @@
           "Parry": 15,
           "Durability": 150
         },
-        "recipe": "Blackmetal Knife (I) 4 Black metal 5 Linen thread",
+        "recipe": "1 Blackmetal Knife (I) 4 Black metal 5 Linen thread",
         "prerequisites": "Forge: Level 5"
       },
       {
@@ -3362,7 +3362,7 @@
           "Parry": 20,
           "Durability": 200
         },
-        "recipe": "Blackmetal Knife (II) 8 Black metal 10 Linen thread",
+        "recipe": "1 Blackmetal Knife (II) 8 Black metal 10 Linen thread",
         "prerequisites": "Forge: Level 6"
       },      
       {
@@ -3373,7 +3373,7 @@
           "Parry": 25,
           "Durability": 250
         },
-        "recipe": "Blackmetal Knife (III) 12 Black metal 15 Linen thread",
+        "recipe": "1 Blackmetal Knife (III) 12 Black metal 15 Linen thread",
         "prerequisites": "Forge: Level 7"
       }
     ],
@@ -3416,7 +3416,7 @@
           "Parry": 25,
           "Durability": 250
         },
-        "recipe": "Bronze Sword (I) 1 Wood 4 Bronze 1 Leather scraps",
+        "recipe": "1 Bronze Sword (I) 1 Wood 4 Bronze 1 Leather scraps",
         "prerequisites": "Forge: Level 2"
       },
       {
@@ -3426,7 +3426,7 @@
           "Parry": 30,
           "Durability": 300
         },
-        "recipe": "Bronze Sword (II) 2 Wood 8 Bronze 2 Leather scraps",
+        "recipe": "1 Bronze Sword (II) 2 Wood 8 Bronze 2 Leather scraps",
         "prerequisites": "Forge: Level 3"
       },      
       {
@@ -3436,7 +3436,7 @@
           "Parry": 35,
           "Durability": 350
         },
-        "recipe": "Bronze Sword (III) 3 Wood 12 Bronze 3 Leather scraps",
+        "recipe": "1 Bronze Sword (III) 3 Wood 12 Bronze 3 Leather scraps",
         "prerequisites": "Forge: Level 4"
       }
     ],
@@ -3480,7 +3480,7 @@
           "Parry": 25,
           "Durability": 250
         },
-        "recipe": "Iron Sword (I) 1 Wood 10 Iron 2 Leather scraps",
+        "recipe": "1 Iron Sword (I) 1 Wood 10 Iron 2 Leather scraps",
         "prerequisites": "Forge: Level 3"
       },
       {
@@ -3490,7 +3490,7 @@
           "Parry": 30,
           "Durability": 300
         },
-        "recipe": "Iron Sword (II) 2 Wood 20 Iron 4 Leather scraps",
+        "recipe": "1 Iron Sword (II) 2 Wood 20 Iron 4 Leather scraps",
         "prerequisites": "Forge: Level 4"
       },      
       {
@@ -3500,7 +3500,7 @@
           "Parry": 35,
           "Durability": 350
         },
-        "recipe": "Iron Sword (III) 3 Wood 30 Iron 6 Leather scraps",
+        "recipe": "1 Iron Sword (III) 3 Wood 30 Iron 6 Leather scraps",
         "prerequisites": "Forge: Level 5"
       }
     ],
@@ -3546,7 +3546,7 @@
           "Parry": 25,
           "Durability": 250
         },
-        "recipe": "Silver Sword (I) 1 Wood 20 Silver 1 Leather scraps 3 Iron",
+        "recipe": "1 Silver Sword (I) 1 Wood 20 Silver 1 Leather scraps 3 Iron",
         "prerequisites": "Forge: Level 4"
       },
       {
@@ -3557,7 +3557,7 @@
           "Parry": 30,
           "Durability": 300
         },
-        "recipe": "Silver Sword (II) 2 Wood 40 Silver 2 Leather scraps 6 Iron",
+        "recipe": "1 Silver Sword (II) 2 Wood 40 Silver 2 Leather scraps 6 Iron",
         "prerequisites": "Forge: Level 5"
       },      
       {
@@ -3568,7 +3568,7 @@
           "Parry": 35,
           "Durability": 350
         },
-        "recipe": "Silver Sword (III) 3 Wood 60 Silver 3 Leather scraps 9 Iron",
+        "recipe": "1 Silver Sword (III) 3 Wood 60 Silver 3 Leather scraps 9 Iron",
         "prerequisites": "Forge: Level 6"
       }
     ],
@@ -3612,7 +3612,7 @@
           "Parry": 25,
           "Durability": 250
         },
-        "recipe": "Blackmetal Sword (I) 10 Black metal 5 Linen thread",
+        "recipe": "1 Blackmetal Sword (I) 10 Black metal 5 Linen thread",
         "prerequisites": "Forge: Level 5"
       },
       {
@@ -3622,7 +3622,7 @@
           "Parry": 30,
           "Durability": 300
         },
-        "recipe": "Blackmetal Sword (II) 20 Black metal 10 Linen thread",
+        "recipe": "1 Blackmetal Sword (II) 20 Black metal 10 Linen thread",
         "prerequisites": "Forge: Level 6"
       },      
       {
@@ -3632,7 +3632,7 @@
           "Parry": 35,
           "Durability": 350
         },
-        "recipe": "Blackmetal Sword (III) 30 Black metal 15 Linen thread",
+        "recipe": "1 Blackmetal Sword (III) 30 Black metal 15 Linen thread",
         "prerequisites": "Forge: Level 7"
       }
     ],
@@ -3676,7 +3676,7 @@
           "Parry": 45,
           "Durability": 175
         },
-        "recipe": "Bronze Atgeir (I) 4 Bronze",
+        "recipe": "1 Bronze Atgeir (I) 4 Bronze",
         "prerequisites": "Forge: Level 2"
       },
       {
@@ -3686,7 +3686,7 @@
           "Parry": 50,
           "Durability": 225
         },
-        "recipe": "Bronze Atgeir (II) 8 Bronze",
+        "recipe": "1 Bronze Atgeir (II) 8 Bronze",
         "prerequisites": "Forge: Level 3"
       },      
       {
@@ -3696,7 +3696,7 @@
           "Parry": 55,
           "Durability": 275
         },
-        "recipe": "Bronze Atgeir (III) 12 Bronze",
+        "recipe": "1 Bronze Atgeir (III) 12 Bronze",
         "prerequisites": "Forge: Level 4"
       }
     ],
@@ -3740,7 +3740,7 @@
           "Parry": 45,
           "Durability": 225
         },
-        "recipe": "Iron Atgeir (I) 15 Iron 1 Leather scraps",
+        "recipe": "1 Iron Atgeir (I) 15 Iron 1 Leather scraps",
         "prerequisites": "Forge: Level 3"
       },
       {
@@ -3750,7 +3750,7 @@
           "Parry": 50,
           "Durability": 275
         },
-        "recipe": "Iron Atgeir (II) 30 Iron 2 Leather scraps",
+        "recipe": "1 Iron Atgeir (II) 30 Iron 2 Leather scraps",
         "prerequisites": "Forge: Level 4"
       },      
       {
@@ -3760,7 +3760,7 @@
           "Parry": 55,
           "Durability": 325
         },
-        "recipe": "Iron Atgeir (III) 45 Iron 3 Leather scraps",
+        "recipe": "1 Iron Atgeir (III) 45 Iron 3 Leather scraps",
         "prerequisites": "Forge: Level 5"
       }
     ],
@@ -3804,7 +3804,7 @@
           "Parry": 45,
           "Durability": 225
         },
-        "recipe": "Blackmetal Atgeir (I) 15 Black metal 5 Linen thread",
+        "recipe": "1 Blackmetal Atgeir (I) 15 Black metal 5 Linen thread",
         "prerequisites": "Forge: Level 5"
       },
       {
@@ -3814,7 +3814,7 @@
           "Parry": 50,
           "Durability": 275
         },
-        "recipe": "Blackmetal Atgeir (II) 30 Black metal 10 Linen thread",
+        "recipe": "1 Blackmetal Atgeir (II) 30 Black metal 10 Linen thread",
         "prerequisites": "Forge: Level 6"
       },      
       {
@@ -3824,7 +3824,7 @@
           "Parry": 55,
           "Durability": 325
         },
-        "recipe": "Blackmetal Atgeir (III) 45 Black metal 15 Linen thread",
+        "recipe": "1 Blackmetal Atgeir (III) 45 Black metal 15 Linen thread",
         "prerequisites": "Forge: Level 7"
       }
     ],
@@ -3866,7 +3866,7 @@
           "Pierce Damage": 26,          
           "Durability": 150
         },
-        "recipe": "Flint Spear (I) 3 Wood 5 Flint 1 Leather scraps",
+        "recipe": "1 Flint Spear (I) 3 Wood 5 Flint 1 Leather scraps",
         "prerequisites": "Workbench: Level 2"
       },
       {
@@ -3875,7 +3875,7 @@
           "Pierce Damage": 32,        
           "Durability": 200
         },
-        "recipe": "Flint Spear (II) 6 Wood 10 Flint 2 Leather scraps",
+        "recipe": "1 Flint Spear (II) 6 Wood 10 Flint 2 Leather scraps",
         "prerequisites": "Workbench: Level 3"
       },      
       {
@@ -3884,7 +3884,7 @@
           "Pierce Damage": 38,
           "Durability": 250
         },
-        "recipe": "Flint Spear (III) 9 Wood 15 Flint 3 Leather scraps",
+        "recipe": "1 Flint Spear (III) 9 Wood 15 Flint 3 Leather scraps",
         "prerequisites": "Workbench: Level 4"
       }
     ],
@@ -3926,7 +3926,7 @@
           "Pierce Damage": 41,          
           "Durability": 150
         },
-        "recipe": "Bronze Spear (I) 3 Wood 4 Bronze 1 Deer hide",
+        "recipe": "1 Bronze Spear (I) 3 Wood 4 Bronze 1 Deer hide",
         "prerequisites": "Forge: Level 2"
       },
       {
@@ -3935,7 +3935,7 @@
           "Pierce Damage": 47,        
           "Durability": 200
         },
-        "recipe": "Bronze Spear (II) 6 Wood 8 Bronze 2 Deer hide",
+        "recipe": "1 Bronze Spear (II) 6 Wood 8 Bronze 2 Deer hide",
         "prerequisites": "Forge: Level 3"
       },      
       {
@@ -3944,7 +3944,7 @@
           "Pierce Damage": 53,
           "Durability": 250
         },
-        "recipe": "Bronze Spear (III) 9 Wood 12 Bronze 3 Deer hide",
+        "recipe": "1 Bronze Spear (III) 9 Wood 12 Bronze 3 Deer hide",
         "prerequisites": "Forge: Level 4"
       }
     ],
@@ -3986,7 +3986,7 @@
           "Pierce Damage": 61,          
           "Durability": 150
         },
-        "recipe": "Ancient Bark Spear (I) 1 Troll hide 5 Iron 5 Ancient bark",
+        "recipe": "1 Ancient Bark Spear (I) 1 Troll hide 5 Iron 5 Ancient bark",
         "prerequisites": "Forge: Level 4"
       },
       {
@@ -3995,7 +3995,7 @@
           "Pierce Damage": 67,        
           "Durability": 200
         },
-        "recipe": "Ancient Bark Spear (II) 2 Troll hide 10 Iron 10 Ancient bark",
+        "recipe": "1 Ancient Bark Spear (II) 2 Troll hide 10 Iron 10 Ancient bark",
         "prerequisites": "Forge: Level 5"
       },      
       {
@@ -4004,7 +4004,7 @@
           "Pierce Damage": 73,
           "Durability": 250
         },
-        "recipe": "Ancient Bark Spear (III) 3 Troll hide 15 Iron 15 Ancient bark",
+        "recipe": "1 Ancient Bark Spear (III) 3 Troll hide 15 Iron 15 Ancient bark",
         "prerequisites": "Forge: Level 6"
       }
     ],
@@ -4046,7 +4046,7 @@
           "Pierce Damage": 76,          
           "Durability": 150
         },
-        "recipe": "Fang Spear (I)  5 Ancient bark 2 Wolf fang 1 Leather scraps 1 Silver",
+        "recipe": "1 Fang Spear (I)  5 Ancient bark 2 Wolf fang 1 Leather scraps 1 Silver",
         "prerequisites": "Forge: Level 4"
       },
       {
@@ -4055,7 +4055,7 @@
           "Pierce Damage": 82,        
           "Durability": 200
         },
-        "recipe": "Fang Spear (II) 10 Ancient bark 4 Wolf fang 2 Leather scraps 2 Silver",
+        "recipe": "1 Fang Spear (II) 10 Ancient bark 4 Wolf fang 2 Leather scraps 2 Silver",
         "prerequisites": "Forge: Level 5"
       },      
       {
@@ -4064,7 +4064,7 @@
           "Pierce Damage": 88,
           "Durability": 250
         },
-        "recipe": "Fang Spear (III) 15 Ancient bark 6 Wolf fang 3 Leather scraps 3 Silver",
+        "recipe": "1 Fang Spear (III) 15 Ancient bark 6 Wolf fang 3 Leather scraps 3 Silver",
         "prerequisites": "Forge: Level 6"
       }
     ],
@@ -4131,7 +4131,7 @@
           "Pierce Damage": 25,          
           "Durability": 100
         },
-        "recipe": "Crude Bow (I) 5 Wood 4 Leather scraps 1 Deer hide",
+        "recipe": "1 Crude Bow (I) 5 Wood 4 Leather scraps 1 Deer hide",
         "prerequisites": "Workbench: Level 2"
       },
       {
@@ -4140,7 +4140,7 @@
           "Pierce Damage": 28,        
           "Durability": 150
         },
-        "recipe": "Crude Bow (II) 10 Wood 8 Leather scraps 2 Deer hide",
+        "recipe": "1 Crude Bow (II) 10 Wood 8 Leather scraps 2 Deer hide",
         "prerequisites": "Workbench: Level 3"
       },      
       {
@@ -4149,7 +4149,7 @@
           "Pierce Damage": 31,
           "Durability": 200
         },
-        "recipe": "Crude Bow (III) 15 Wood 12 Leather scraps 3 Deer hide",
+        "recipe": "1 Crude Bow (III) 15 Wood 12 Leather scraps 3 Deer hide",
         "prerequisites": "Workbench: Level 4"
       }
     ],
@@ -4191,7 +4191,7 @@
           "Pierce Damage": 35,          
           "Durability": 150
         },
-        "recipe": "Crude Bow (I) 5 Fine wood 5 Core wood 2 Deer hide",
+        "recipe": "1 Finewood Bow (I) 5 Fine wood 5 Core wood 2 Deer hide",
         "prerequisites": "Workbench: Level 2"
       },
       {
@@ -4200,7 +4200,7 @@
           "Pierce Damage": 38,        
           "Durability": 200
         },
-        "recipe": "Crude Bow (II) 10 Fine wood 10 Core wood 4 Deer hide",
+        "recipe": "1 Finewood Bow (II) 10 Fine wood 10 Core wood 4 Deer hide",
         "prerequisites": "Workbench: Level 3"
       },      
       {
@@ -4209,7 +4209,7 @@
           "Pierce Damage": 41,
           "Durability": 250
         },
-        "recipe": "Crude Bow (III) 15 Fine wood 15 Core wood 6 Deer hide",
+        "recipe": "1 Finewood Bow (III) 15 Fine wood 15 Core wood 6 Deer hide",
         "prerequisites": "Workbench: Level 4"
       }
     ],
@@ -4251,7 +4251,7 @@
           "Pierce Damage": 45,          
           "Durability": 150
         },
-        "recipe": "Huntsman Bow (I) 5 Fine wood 5 Core wood 2 Deer hide",
+        "recipe": "1 Huntsman Bow (I) 5 Fine wood 5 Core wood 2 Deer hide",
         "prerequisites": "Workbench: Level 2"
       },
       {
@@ -4260,7 +4260,7 @@
           "Pierce Damage": 48,        
           "Durability": 200
         },
-        "recipe": "Huntsman Bow (II) 10 Fine wood 10 Core wood 4 Deer hide",
+        "recipe": "1 Huntsman Bow (II) 10 Fine wood 10 Core wood 4 Deer hide",
         "prerequisites": "Workbench: Level 3"
       },      
       {
@@ -4269,7 +4269,7 @@
           "Pierce Damage": 51,
           "Durability": 250
         },
-        "recipe": "Huntsman Bow (III) 15 Fine wood 15 Core wood 6 Deer hide",
+        "recipe": "1 Huntsman Bow (III) 15 Fine wood 15 Core wood 6 Deer hide",
         "prerequisites": "Workbench: Level 4"
       }
     ],
@@ -4313,7 +4313,7 @@
           "Poison Damage": 10,
           "Durability": 150
         },
-        "recipe": "Draugr Fang (I) 5 Ancient bark 10 Silver 2 Deer hide 2 Guck",
+        "recipe": "1 Draugr Fang (I) 5 Ancient bark 10 Silver 2 Deer hide 2 Guck",
         "prerequisites": "Forge: Level 3"
       },
       {
@@ -4323,7 +4323,7 @@
           "Poison Damage": 15,   
           "Durability": 200
         },
-        "recipe": "Draugr Fang (II) 10 Ancient bark 20 Silver 4 Deer hide 4 Guck",
+        "recipe": "1 Draugr Fang (II) 10 Ancient bark 20 Silver 4 Deer hide 4 Guck",
         "prerequisites": "Forge: Level 4"
       },      
       {
@@ -4333,7 +4333,7 @@
           "Poison Damage": 20,
           "Durability": 250
         },
-        "recipe": "Draugr Fang (III) 15 Ancient bark 30 Silver 6 Deer hide 6 Guck",
+        "recipe": "1 Draugr Fang (III) 15 Ancient bark 30 Silver 6 Deer hide 6 Guck",
         "prerequisites": "Forge: Level 5"
       }
     ],
@@ -4375,7 +4375,7 @@
           "Block": 25, 
           "Durability": 250
         },
-        "recipe": "Wood Shield (I) 5 Wood 2 Resin 2 Leather scraps",
+        "recipe": "1 Wood Shield (I) 5 Wood 2 Resin 2 Leather scraps",
         "prerequisites": "Workbench: Level 2"
       },
       {
@@ -4384,7 +4384,7 @@
           "Block": 30,     
           "Durability": 300
         },
-        "recipe": "Wood Shield (II) 10 Wood 4 Resin 4 Leather scraps",
+        "recipe": "1 Wood Shield (II) 10 Wood 4 Resin 4 Leather scraps",
         "prerequisites": "Workbench: Level 3"
       }
     ],
@@ -4423,7 +4423,7 @@
           "Block": 50, 
           "Durability": 250
         },
-        "recipe": "Bronze Buckler (I) 5 Bronze 1 Wood",
+        "recipe": "1 Bronze Buckler (I) 5 Bronze 1 Wood",
         "prerequisites": "Forge: Level 2"
       },
       {
@@ -4432,7 +4432,7 @@
           "Block": 55,     
           "Durability": 300
         },
-        "recipe": "Bronze Buckler (II) 10 Bronze 2 Wood",
+        "recipe": "1 Bronze Buckler (II) 10 Bronze 2 Wood",
         "prerequisites": "Forge: Level 3"
       }
     ],
@@ -4473,7 +4473,7 @@
           "Parry": 45,
           "Durability": 250
         },
-        "recipe": "Banded Shield (I) 10 Fine wood 4 Iron",
+        "recipe": "1 Banded Shield (I) 10 Fine wood 4 Iron",
         "prerequisites": "Forge: Level 3"
       },
       {
@@ -4483,7 +4483,7 @@
           "Parry": 50,
           "Durability": 300
         },
-        "recipe": "Banded Shield (II) 20 Fine wood 8 Iron",
+        "recipe": "1 Banded Shield (II) 20 Fine wood 8 Iron",
         "prerequisites": "Forge: Level 4"
       }
     ],
@@ -4523,7 +4523,7 @@
           "Parry": 45,
           "Durability": 250
         },
-        "recipe": "Silver Shield (I) 10 Fine wood 4 Silver",
+        "recipe": "1 Silver Shield (I) 10 Fine wood 4 Silver",
         "prerequisites": "Forge: Level 4"
       },
       {
@@ -4533,7 +4533,7 @@
           "Parry": 50,
           "Durability": 300
         },
-        "recipe": "Silver Shield (II) 20 Fine wood 8 Silver",
+        "recipe": "1 Silver Shield (II) 20 Fine wood 8 Silver",
         "prerequisites": "Forge: Level 5"
       }
     ],
@@ -4573,7 +4573,7 @@
           "Parry": 55,
           "Durability": 250
         },
-        "recipe": "Black Metal Shield (I) 10 Fine wood 4 Black metal 2 Chain",
+        "recipe": "1 Black Metal Shield (I) 10 Fine wood 4 Black metal 2 Chain",
         "prerequisites": "Forge: Level 4"
       },
       {
@@ -4583,7 +4583,7 @@
           "Parry": 60,
           "Durability": 300
         },
-        "recipe": "Black Metal Shield (II) 20 Fine wood 8 Black metal 4 Chain",
+        "recipe": "1 Black Metal Shield (II) 20 Fine wood 8 Black metal 4 Chain",
         "prerequisites": "Forge: Level 5"
       }
     ],
@@ -4621,7 +4621,7 @@
           "Block": 40, 
           "Durability": 250
         },
-        "recipe": "Wood Tower Shield (I) 5 Wood 3 Leather scraps",
+        "recipe": "1 Wood Tower Shield (I) 5 Wood 3 Leather scraps",
         "prerequisites": "Workbench: Level 2"
       },
       {
@@ -4630,7 +4630,7 @@
           "Block": 45,     
           "Durability": 300
         },
-        "recipe": "Wood Tower Shield (II) 10 Wood 4 Resin 4 Leather scraps",
+        "recipe": "1 Wood Tower Shield (II) 10 Wood 4 Resin 4 Leather scraps",
         "prerequisites": "Workbench: Level 3"
       }
     ],
@@ -4667,7 +4667,7 @@
           "Block": 80, 
           "Durability": 250
         },
-        "recipe": "Wood Tower Shield (I) 10 Fine wood 5 Iron",
+        "recipe": "1 Wood Tower Shield (I) 10 Fine wood 5 Iron",
         "prerequisites": "Forge : Level 3"
       },
       {
@@ -4676,7 +4676,7 @@
           "Block": 85,     
           "Durability": 300
         },
-        "recipe": "Wood Tower Shield (II) 20 Fine wood 10 Iron",
+        "recipe": "1 Wood Tower Shield (II) 20 Fine wood 10 Iron",
         "prerequisites": "Forge : Level 4"
       }
     ],
@@ -4713,7 +4713,7 @@
           "Block": 110, 
           "Durability": 250
         },
-        "recipe": "Black Metal Tower Shield (I) 15 Fine wood 6 Black metal 2 Chain",
+        "recipe": "1 Black Metal Tower Shield (I) 15 Fine wood 6 Black metal 2 Chain",
         "prerequisites": "Forge: Level 4"
       },
       {
@@ -4722,7 +4722,7 @@
           "Block": 115,     
           "Durability": 300
         },
-        "recipe": "Black Metal Tower Shield (II) 20 Fine wood 8 Black metal 4 Chain",
+        "recipe": "1 Black Metal Tower Shield (II) 20 Fine wood 8 Black metal 4 Chain",
         "prerequisites": "Forge: Level 5"
       }
     ],
@@ -4759,7 +4759,7 @@
           "Block": 95, 
           "Durability": 300
         },
-        "recipe": "Serpent Scale Shield (I) 10 Fine wood 2 Iron 4 Serpent scale",
+        "recipe": "1 Serpent Scale Shield (I) 10 Fine wood 2 Iron 4 Serpent scale",
         "prerequisites": "Forge: Level 4"
       },
       {
@@ -4768,7 +4768,7 @@
           "Block": 100,     
           "Durability": 350
         },
-        "recipe": "Serpent Scale Shield (II) 20 Fine wood 4 Iron 8 Serpent scale",
+        "recipe": "1 Serpent Scale Shield (II) 20 Fine wood 4 Iron 8 Serpent scale",
         "prerequisites": "Forge: Level 5"
       }
     ],

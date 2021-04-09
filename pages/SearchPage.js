@@ -31,6 +31,25 @@ function SeeMoreResult(navigation) {
   );
 }
 
+function shuffle(array) {
+  let currentIndex = array.length; let temporaryValue; let
+    randomIndex;
+
+  // While there remain elements to shuffle...
+  while (currentIndex !== 0) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
 const SearchPage = ({ navigation }) => {
   const [search, setSearch] = useState('');
   const filtered = Object.keys(ALL_OBJECTS_DATA)
@@ -48,7 +67,7 @@ const SearchPage = ({ navigation }) => {
         contentContainerStyle={{ flexGrow: 1 }}
         keyboardShouldPersistTaps="handled"
       >
-        {filtered
+        {shuffle(filtered)
           .slice(0, SEARCH_RESULTS_COUNT_LIMIT)
           .map((name) => (
             <ListItem

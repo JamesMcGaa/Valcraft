@@ -15,13 +15,18 @@ import {
 } from 'react-native-elements';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { Linking } from 'expo';
+import { AdMobBanner, Linking } from 'expo-ads-admob';
+import Constants from 'expo-constants';
 import drawerLogo from './assets/pixel_fire_logo.png';
 import MaterialsPage from './pages/MaterialsPage';
 import ObjectPage from './pages/ObjectPage';
 import RequirementsPage from './pages/RequirementsPage';
 import SearchPage from './pages/SearchPage';
 import HomePage from './pages/HomePage';
+
+const testID = 'ca-app-pub-3940256099942544/6300978111';
+const productionID = 'ca-app-pub-9949701533501420/9744473329';
+const adUnitID = Constants.isDevice && !__DEV__ ? productionID : testID;
 
 const DISPLAY_DRAWER_ITEMS = ['About', 'All Items', 'Tracked Items'];
 function loadInBrowser(url) {
@@ -119,6 +124,32 @@ function MyDrawer() {
             )}
           />
         ),
+        footer: () => (
+          <Header
+            backgroundColor="#4B3223"
+            leftComponent={(
+              <Icon
+                name="navicon"
+                type="evilicon"
+                color="#FFF"
+                size={40}
+                onPress={() => navigation.openDrawer()}
+                style={{ alignSelf: 'center' }}
+              />
+            )}
+            centerComponent={<Text h4 style={{ color: 'white' }}>Valcraft</Text>}
+            rightComponent={(
+              <Icon
+                name="bug-report"
+                type="ionicons"
+                color="#FFF"
+                size={34}
+                onPress={() => loadInBrowser('https://forms.gle/sr9koPWazb1v4uDCA')}
+                style={{ alignSelf: 'center' }}
+              />
+            )}
+          />
+        ),
       })}
     >
       <Drawer.Screen name="About" component={HomePage} />
@@ -135,6 +166,11 @@ export default function App() {
       <NavigationContainer>
         <Root />
       </NavigationContainer>
+      <AdMobBanner
+        bannerSize="fullBanner"
+        adUnitID={adUnitID}
+        servePersonalizedAds
+      />
     </SafeAreaProvider>
   );
 }

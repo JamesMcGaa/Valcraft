@@ -35,7 +35,8 @@
     "react-navigation-native": "0.0.0",
     "react-navigation-stack": "^2.10.3",
     "react-select": "^4.1.0",
-    "react-select-search": "^3.0.2"
+    "react-select-search": "^3.0.2",
+    "expo-ads-admob": "~8.4.0"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",

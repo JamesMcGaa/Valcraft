@@ -2,9 +2,9 @@
   "expo": {
     "name": "Valcraft",
     "slug": "Valcraft",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "orientation": "portrait",
-    "icon": "./assets/fire_icon.png",
+    "icon": "./assets/friends_icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -22,10 +22,15 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/fire_icon.png",
+        "foregroundImage": "./assets/friends_icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.jemcgaa.Valcraft"
+      "package": "com.jemcgaa.Valcraft",
+      "permissions": [],
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-9949701533501420~7309881678"
+      },
+      "versionCode": 2
     },
     "web": {
       "favicon": "./assets/favicon.png"

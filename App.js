@@ -15,7 +15,7 @@ import {
 } from 'react-native-elements';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { AdMobBanner, Linking } from 'expo-ads-admob';
+import { AdMobBanner } from 'expo-ads-admob';
 import Constants from 'expo-constants';
 import drawerLogo from './assets/pixel_fire_logo.png';
 import MaterialsPage from './pages/MaterialsPage';

@@ -97,7 +97,6 @@ function MyDrawer() {
       drawerContent={(props) => <CustomDrawerContent {...props} />}
       screenOptions={({ navigation }) => ({
         headerShown: true,
-
         header: () => (
           <Header
             backgroundColor="#4B3223"
@@ -112,44 +111,9 @@ function MyDrawer() {
               />
             )}
             centerComponent={<Text h4 style={{ color: 'white' }}>Valcraft</Text>}
-            rightComponent={(
-              <Icon
-                name="bug-report"
-                type="ionicons"
-                color="#FFF"
-                size={34}
-                onPress={() => loadInBrowser('https://forms.gle/sr9koPWazb1v4uDCA')}
-                style={{ alignSelf: 'center' }}
-              />
-            )}
           />
         ),
-        footer: () => (
-          <Header
-            backgroundColor="#4B3223"
-            leftComponent={(
-              <Icon
-                name="navicon"
-                type="evilicon"
-                color="#FFF"
-                size={40}
-                onPress={() => navigation.openDrawer()}
-                style={{ alignSelf: 'center' }}
-              />
-            )}
-            centerComponent={<Text h4 style={{ color: 'white' }}>Valcraft</Text>}
-            rightComponent={(
-              <Icon
-                name="bug-report"
-                type="ionicons"
-                color="#FFF"
-                size={34}
-                onPress={() => loadInBrowser('https://forms.gle/sr9koPWazb1v4uDCA')}
-                style={{ alignSelf: 'center' }}
-              />
-            )}
-          />
-        ),
+
       })}
     >
       <Drawer.Screen name="About" component={HomePage} />
@@ -166,11 +130,11 @@ export default function App() {
       <NavigationContainer>
         <Root />
       </NavigationContainer>
-      <AdMobBanner
-        bannerSize="fullBanner"
+      {/* <AdMobBanner
+        bannerSize="smartBannerPortrait"
         adUnitID={adUnitID}
         servePersonalizedAds
-      />
+      /> */}
     </SafeAreaProvider>
   );
 }

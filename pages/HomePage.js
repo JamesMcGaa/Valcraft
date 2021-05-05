@@ -8,7 +8,7 @@ function HomePage(props) {
   return (
     <View>
       <Card>
-        <Card.Title h4>Welcome to Valcraft (Beta)</Card.Title>
+        <Card.Title h4>Welcome to Valcraft</Card.Title>
         <Card.Divider />
         <Image
           source={drawerLogo}

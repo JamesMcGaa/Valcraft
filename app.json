@@ -2,7 +2,7 @@
   "expo": {
     "name": "Valcraft",
     "slug": "Valcraft",
-    "version": "1.1.0",
+    "version": "1.3.0",
     "orientation": "portrait",
     "icon": "./assets/friends_icon.png",
     "splash": {
@@ -30,7 +30,7 @@
       "config": {
         "googleMobileAdsAppId": "ca-app-pub-9949701533501420~7309881678"
       },
-      "versionCode": 2
+      "versionCode": 3
     },
     "web": {
       "favicon": "./assets/favicon.png"

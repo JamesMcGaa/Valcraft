@@ -1,8 +1,9 @@
 import React from 'react';
-import { View, Image } from 'react-native';
+import { View, Dimensions, Image } from 'react-native';
+// import Image from 'react-native-scalable-image';
 
 import { Button, Card, Text } from 'react-native-elements';
-import drawerLogo from '../assets/pixel_fire_logo.png';
+import drawerLogo from '../assets/background.png';
 
 function HomePage(props) {
   return (
@@ -13,8 +14,13 @@ function HomePage(props) {
         <Image
           source={drawerLogo}
           style={{
-            width: 150, height: 150, margin: 10, resizeMode: 'contain', alignSelf: 'center',
+            width: '100%',
+            height: 200,
+            // display: 'flex',
+            // flex: 1,
+            backgroundColor: 'blue',
           }}
+          // resizeMode="contain"
         />
       </Card>
       <Card>

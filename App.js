@@ -17,7 +17,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { AdMobBanner } from 'expo-ads-admob';
 import Constants from 'expo-constants';
-import drawerLogo from './assets/pixel_fire_logo.png';
+import drawerLogo from './assets/featureart.png';
 import MaterialsPage from './pages/MaterialsPage';
 import ObjectPage from './pages/ObjectPage';
 import RequirementsPage from './pages/RequirementsPage';
@@ -48,7 +48,7 @@ function CustomDrawerContent(props) {
         <Image
           source={drawerLogo}
           style={{
-            width: 150, height: 150, margin: 10, resizeMode: 'contain',
+            width: 250, height: 200, margin: 10, resizeMode: 'contain',
           }}
         />
       </View>
